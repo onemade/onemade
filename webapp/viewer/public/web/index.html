@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+
+        <link rel="stylesheet" href="my.css" />
+        <link rel="stylesheet" href="../stylesheets/add2home.css" />
+
+        <style>
+            /* App custom styles */
+        </style>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js">
+        </script>
+        <script src="../javascripts/add2home.js">
+        </script>
+        
+        <script src="my.js">
+        </script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="b" data-role="header" data-position="fixed">
+                <h3>
+                    中国石油
+                </h3>
+                <a data-role="button" data-transition="fade" href="javascript:window.location.reload();" data-icon="home" data-iconpos="right" class="ui-btn-left">
+                    登陆
+                </a>
+            </div>
+<textarea id="newslistTmpl" rows="1" cols="1" style="display:none;">
+
+    <li data-role="list-divider" role="heading">
+        {{channel}}
+    </li>
+    {{#items}}
+        <li data-theme="d">
+            <a href="{{link}}" data-transition="slide">
+                {{title}}
+                <span class="ui-li-count">
+                    {{time}}
+                </span>
+            </a>
+        </li>
+    {{/items}}
+    {{#imgitems}}
+        <li data-theme="d">
+            <a href="{{link}}" data-transition="slide">
+                <img src="{{imgsrc}}" style="height:100%" class="ui-li-thumb">
+                <h3 class="ui-li-heading">{{title}}</h3>
+                <p class="ui-li-desc">Hot Chip</p>
+                <span class="ui-li-count">
+                    {{time}}
+                </span>
+            </a>
+        </li>
+    {{/imgitems}}
+    {{#empty}}
+      <p>The list is empty.</p>
+    {{/empty}}
+</textarea>
+            <div data-role="content" style="padding: 15px">
+                <ul id="newslist" data-role="listview" data-divider-theme="e" data-inset="false">
+                <!--
+                    <li data-role="list-divider" role="heading">
+                        集团新闻
+                    </li>
+                -->
+                <!--
+                    <li data-theme="d">
+                        <a href="#page1" data-transition="slide">
+                            中国石油首个重大科技专项接力攻关结硕果中国石油首个重大科技专项接力攻关结硕果中国石油首个重大科技专项接力攻关结硕果中国石油首个重大科技专项接力攻关结硕果
+                            <span class="ui-li-count">
+                                刚刚
+                            </span>
+                        </a>
+                   
+                        <a href="index.html" class="ui-link-inherit">
+                            <p class="ui-li-aside ui-li-desc"><strong>2分钟前</strong></p>
+                            <h3 class="ui-li-heading">国石油首个重大科技专项接力攻关结硕果</h3>
+                            <p class="ui-li-desc">You've been invited to a meeting at Filament Group in Boston, MA</p>                               
+                        </a>
+                    </li>
+                
+                    <li data-theme="d">
+                        <a href="#page1" data-transition="slide">
+                            中国石油：把先进使用技术转化为现实生产力
+                            <span class="ui-li-count">
+                                10分钟前
+                            </span>
+                        </a>
+                    </li>
+                    <li data-theme="d">
+                        <a href="#page1" data-transition="slide">
+                            浙江销售、上海销售、冀东销售抗击强台风
+                            <span class="ui-li-count">
+                                1小时前
+                            </span>
+                        </a>
+                    </li>
+                    <li data-theme="d">
+                        <a href="#page1" data-transition="slide">
+                            长庆镇原油田创“1/2&gt;1”奇迹
+                            <span class="ui-li-count">
+                                2天前
+                            </span>
+                        </a>
+                    </li>
+                -->
+                </ul>
+                
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+            <!--
+                <h3>
+                    Footer
+                </h3>
+            -->
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#news" data-theme="" data-icon="grid">
+                                新闻
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#follow" data-theme="" data-icon="info">
+                                关注
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#hot" data-theme="" data-icon="star">
+                                热榜
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#search" data-theme="" data-icon="search">
+                                搜索
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!--
+        <script src="https://raw.github.com/janl/mustache.js/master/mustache.js">
+        </script>
+        -->
+        <script src="mustache.js">
+        </script>
+        <script>
+            //App custom javascript
+            var view = {
+              "channel": "通知公告",
+              "items": [
+                  {"title": "中国石油首个重大科技专项接力攻关结硕果", "link": "http://www.cnpc.com.cn/News/zzxw/xwzx/xwygg/201208/20120815_C5204.shtml","pubDate":"2012-08-15T23:05:00Z"},
+                  {"title": "中国石油首个重大科技专项接力攻关结硕果", "link": "#","pubDate":"2012-08-15T15:05:00Z"},
+                  {"title": "中国石油：把先进使用技术转化为现实生产力", "link": "#","pubDate":"2012-08-15T03:05:00Z"},
+                  {"title": "浙江销售、上海销售、冀东销售抗击强台风", "link": "#","pubDate":"2012-08-09T03:05:00Z"}
+              ],
+              "imgitems": [
+                  {"title": "中国石油首个重大科技专项接力攻关结硕果", "imgsrc":"http://www.cnpc.com.cn/News/zzxw/xwzx/tpxw/DigitalAssets/56565_811388.jpg","link": "#","pubDate":"2012-08-15T23:05:00Z"},
+                  {"title": "中国石油首个重大科技专项接力攻关结硕果", "imgsrc":"http://www.cnpc.com.cn/News/zzxw/xwzx/tpxw/DigitalAssets/0115472006.jpg","link": "#","pubDate":"2012-08-15T15:05:00Z"},
+                  {"title": "中国石油：把先进使用技术转化为现实生产力", "link": "#","pubDate":"2012-08-15T03:05:00Z"},
+                  {"title": "浙江销售、上海销售、冀东销售抗击强台风", "link": "#","pubDate":"2012-08-09T03:05:00Z"}
+              ],
+              "empty": false,
+              "time": function () {
+                now = new Date().getTime();
+                pubDate = Date.parse(this.pubDate);
+                console.log(now+'||'+pubDate+'||'+(now-pubDate));
+                var tmp = Math.floor((now-pubDate)/(1000*60)); //分
+
+                if (tmp>1)
+                {
+                    if(tmp>60)
+                    {
+                        tmp = Math.floor(tmp/60);
+                        if(tmp>24)
+                        {
+                            tmp = Math.floor(tmp/24);
+                            return tmp+"天前";
+                        }
+                        return tmp+"小时前";
+                    }
+                    return tmp+"分钟前";
+                }
+                else{return "刚刚";}
+/*
+                if(Math.floor((tmp)/(24*60))>=1)
+                    {return Math.floor((tmp)/(24*60))+"天前";}
+                else if(Math.floor((tmp)/(60))>=1)
+                    {return Math.floor((tmp)/(60))+"小时前";}
+                else if(Math.floor((tmp)/(60))>=1)
+                    {return Math.floor((tmp)/(60))+"分钟前";}
+                else{return "刚刚"}
+*/
+              }
+            }
+            var template = $('#newslistTmpl').text();
+            console.log(template);
+            var html = Mustache.to_html(template, view);
+            $('#newslist').html(html);
+        </script>
+    </body>
+</html>
