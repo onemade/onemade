@@ -33,11 +33,16 @@
                     中国石油
                 </h3>
                 <a data-role="button" data-transition="fade" href="javascript:window.location.reload();" data-icon="home" data-iconpos="right" class="ui-btn-left">
-                    登陆
+                    刷新
                 </a>
+
+                <select name="selectChannel" id="selectChannel" class="ui-btn-right" data-mini="true">
+                   <option value="channel1">频道</option>
+                   <option value="channel2">部委动态</option>
+                   <option value="channel3">图片新闻</option>
+                </select>
             </div>
 <textarea id="newslistTmpl" rows="1" cols="1" style="display:none;">
-
     <li data-role="list-divider" role="heading">
         {{channel}}
     </li>
@@ -56,7 +61,7 @@
             <a href="{{link}}" data-transition="slide">
                 <img src="{{imgsrc}}" style="height:100%" class="ui-li-thumb">
                 <h3 class="ui-li-heading">{{title}}</h3>
-                <p class="ui-li-desc">Hot Chip</p>
+                <p class="ui-li-desc">内容简介</p>
                 <span class="ui-li-count">
                     {{time}}
                 </span>
@@ -163,7 +168,7 @@
               "channel": "通知公告",
               "items": [
                   {"title": "中国石油首个重大科技专项接力攻关结硕果", "link": "http://www.cnpc.com.cn/News/zzxw/xwzx/xwygg/201208/20120815_C5204.shtml","pubDate":"2012-08-15T23:05:00Z"},
-                  {"title": "中国石油首个重大科技专项接力攻关结硕果", "link": "#","pubDate":"2012-08-15T15:05:00Z"},
+                  {"title": "中国石油首个重大科技专项接力攻关结硕果", "link": "http://localhost:4000/","pubDate":"2012-08-15T15:05:00Z"},
                   {"title": "中国石油：把先进使用技术转化为现实生产力", "link": "#","pubDate":"2012-08-15T03:05:00Z"},
                   {"title": "浙江销售、上海销售、冀东销售抗击强台风", "link": "#","pubDate":"2012-08-09T03:05:00Z"}
               ],
@@ -195,15 +200,6 @@
                     return tmp+"分钟前";
                 }
                 else{return "刚刚";}
-/*
-                if(Math.floor((tmp)/(24*60))>=1)
-                    {return Math.floor((tmp)/(24*60))+"天前";}
-                else if(Math.floor((tmp)/(60))>=1)
-                    {return Math.floor((tmp)/(60))+"小时前";}
-                else if(Math.floor((tmp)/(60))>=1)
-                    {return Math.floor((tmp)/(60))+"分钟前";}
-                else{return "刚刚"}
-*/
               }
             }
             var template = $('#newslistTmpl').text();
