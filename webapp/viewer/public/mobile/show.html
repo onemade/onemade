@@ -29,24 +29,25 @@
     </head>
     <body>
         <!-- Home -->
-        <div data-role="page" id="page1">
-        <!--
-            <div data-theme="b" data-role="header" data-position="fixed">
-                <h3>新闻客户端</h3>
-                <a data-role="button" data-transition="fade" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left">
-                </a>
-                <a data-role="button" data-transition="fade" data-icon="arrow-r" data-iconpos="notext" class="ui-btn-right">
-                    向下
-                </a>
-            </div>
-        -->
-<textarea id="newslistTmpl" rows="1" cols="1" style="display:none;">
-    <li data-role="list-divider" role="heading">
-        {{channel}}
-    </li>
+        <div data-role="page" id="page1" data-add-back-btn="true">
 
+            <div data-theme="b" data-role="header" data-position="fixed">
+                
+                <div class="right">
+                    <span style="font-size:1.3em">字号</span>
+                    <span onclick="javascript:$('#content').css('font-size','1.2em');">大</span>
+                    <span onclick="javascript:$('#content').css('font-size','.8em');">小</span>
+                    ｜
+                    <span style="font-size:1.3em">字体</span>
+                    <span onclick="javascript:$('#content').css('font-family','Heiti SC');">黑体</span>
+                    <span onclick="javascript:$('#content').css('font-family','Heiti ');">楷体</span>
+                </div>
+            </div>
+        
+<textarea id="showTmpl" rows="1" cols="1" style="display:none;">
+        {{content}}
 </textarea>
-            <div data-role="content" style="padding: 15px">
+            <div data-role="content" style="padding: 15px" id="content">
                 <h1>
                 中国石油携手新疆维吾尔自治区和新疆生产建设兵团三方合作共同开发红山油田
                 </h1><div id="ctl00_PlaceHolderMain_Content__ControlWrapper_RichHtmlField" class="ms-rtestate-field" aria-labelledby="ctl00_PlaceHolderMain_Content_label"><p class="ms-rteForeColor-9"><img alt="0115360006.jpg" src="http://www.cnpc.com.cn//News/zzxw/xwzx/xwygg/DigitalAssets/0115360006.jpg" /></p><span>
@@ -57,8 +58,8 @@
                 </span><p>　　库热西·买合苏提转达自治区党委和政府对中国石油全体干部员工的问候。他说，红山油田三方合作意义重大，是中国石油贯彻落实中央新疆工作座谈会精神，造福新疆各族人民的实际行动。今年上半年，新疆发展形势总体较好，石油石化产业是有力支撑，这其中有中国石油的突出贡献。自治区大力支持石油石化业务发展，努力创造有利于企业发展的条件和环境，全力以赴配合“新疆大庆”建设。他希望中国石油加快在疆各个项目的工作推进，助力新疆经济社会发展。</p><span>
                 </span><p>　　哈尼巴提·沙布开说，新疆生产建设兵团与中国石油有良好的合作基础，十分珍惜此次红山油田的合作机会。他表示，新疆生产建设兵团将在合作中充分发挥作用，促进互利共赢、共同发展。</p><span>
                 </span><p>　　中国石油天然气集团公司总会计师、党组成员王国樑，中国石油天然气股份有限公司副总裁孙龙德、赵政璋，新疆维吾尔自治区政府副秘书长许斌，以及三方有关部门和单位的负责人参加相关活动。</p></div>
-                
             </div>
+        <!--
             <div data-theme="b" data-role="footer" data-position="fixed">
                 <div data-role="navbar" data-iconpos="top">
                     <ul>
@@ -80,6 +81,7 @@
                     </ul>
                 </div>
             </div>
+        -->
         </div>
         
         <!--
@@ -91,25 +93,15 @@
         <script>
             //App custom javascript
             var view = {
-              "channel": "通知公告",
-              "items": [
-                  {"title": "中国石油首个重大科技专项接力攻关结硕果", "link": "http://www.cnpc.com.cn/News/zzxw/xwzx/xwygg/201208/20120815_C5204.shtml","pubDate":"2012-08-15T23:05:00Z"},
-                  {"title": "中国石油首个重大科技专项接力攻关结硕果", "link": "http://localhost:4000/","pubDate":"2012-08-15T15:05:00Z"},
-                  {"title": "中国石油：把先进使用技术转化为现实生产力", "link": "#","pubDate":"2012-08-15T03:05:00Z"},
-                  {"title": "浙江销售、上海销售、冀东销售抗击强台风", "link": "#","pubDate":"2012-08-09T03:05:00Z"}
-              ],
-              "imgitems": [
-                  {"title": "中国石油首个重大科技专项接力攻关结硕果", "imgsrc":"http://www.cnpc.com.cn/News/zzxw/xwzx/tpxw/DigitalAssets/56565_811388.jpg","link": "#","pubDate":"2012-08-15T23:05:00Z"},
-                  {"title": "中国石油首个重大科技专项接力攻关结硕果", "imgsrc":"http://www.cnpc.com.cn/News/zzxw/xwzx/tpxw/DigitalAssets/0115472006.jpg","link": "#","pubDate":"2012-08-15T15:05:00Z"},
-                  {"title": "中国石油：把先进使用技术转化为现实生产力", "link": "#","pubDate":"2012-08-15T03:05:00Z"},
-                  {"title": "浙江销售、上海销售、冀东销售抗击强台风", "link": "#","pubDate":"2012-08-09T03:05:00Z"}
-              ],
-              "empty": false,
+              "url": "http://www.cnpc.com.cn/12345",
+              "title": '中国石油携手新疆维吾尔自治区和新疆生产建设兵团三方合作共同开发红山油田',
+              "content": 'Hello World!'
             }
-            var template = $('#newslistTmpl').text();
+            var template = $('#showTmpl').text();
+
             console.log(template);
             var html = Mustache.to_html(template, view);
-            $('#newslist').html(html);
+            $('#content').html(html);
         </script>
     </body>
 </html>

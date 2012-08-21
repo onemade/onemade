@@ -24,7 +24,8 @@ console.log('Server running at http://127.0.0.1:3000/');
 
 var readability = require('node-readability')
   , fs = require('fs')
-  , http = require('http');
+  , http = require('http')
+  , url = require('url');
 
 // uncoment the following line to print the debug info to console.
 // readability.debug(true);
@@ -46,8 +47,14 @@ function(err, read) {
   console.log(html);
   
 http.createServer(function (req, res) {
+  // 获取 URL 路径并在控制台上打印
+  var pathname = url.parse(req.url).pathname;
+  console.log('Request for ' + pathname + ' received.');
+
   res.writeHead(200, {'Content-Type': 'text/html'});
-  res.end(html);
+  res.write(html);
+  res.end();
+  
 }).listen(4000, '127.0.0.1');
 console.log('Server running at http://127.0.0.1:4000/');
 
