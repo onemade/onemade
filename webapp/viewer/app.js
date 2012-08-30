@@ -28,6 +28,17 @@ app.configure('development', function(){
 
 app.get('/', routes.index);
 
+/* 频道参数 传值path*/
+var path = "/News/zzxw/xwzx/tpxw";
+app.get('/channel/:path', function(req, res){
+  //res.send('channel path = ' + path);
+  path = req.params.path;
+  path = path.replace(/_/ig,'/');
+  var getSource = require('./getSource');
+  getSource.getSource(res, path);
+})
+
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
