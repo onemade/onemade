@@ -11,7 +11,8 @@
         <style>
             /* App custom styles */
             img {width:100%;margin:0 auto;}
-            h1{font-size:1.3em;text-align:center;}
+            h1 {text-align:center;}
+            #content {font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;}
         </style>
 
         <script src="../lib/jquery1.7.1/jquery.js">
@@ -30,13 +31,10 @@
             <div data-theme="b" data-role="header" data-position="fixed">
 
                 <div class="right">
-                    <span style="font-size:1.3em">字号</span>
-                    <span onclick="javascript:$('#content').css('font-size','1.2em');">大</span>
-                    <span onclick="javascript:$('#content').css('font-size','.8em');">小</span>
-                    ｜
-                    <span style="font-size:1.3em">字体</span>
-                    <span onclick="javascript:$('#content').css('font-family','Heiti SC');">黑体</span>
-                    <span onclick="javascript:$('#content').css('font-family','Heiti ');">楷体</span>
+                    <span style="font-size:1.3em">字体大小：</span>
+                    <span onclick="changeSize('add')"> 增大 </span>
+                    |
+                    <span onclick="changeSize('reduce')"> 减小 </span>
                 </div>
             </div>
         
@@ -89,13 +87,15 @@
             url = "/read/"+ url ;
             $.getJSON(url, function(data){
 
+                /*
                 var view = {
                   "url": "http://www.cnpc.com.cn/",
-                  "title": '中国石油携手新疆维吾尔自治区和新疆生产建设兵团三方合作共同开发红山油田',
+                  "title": '中国石油携手新疆维吾尔自治区...',
                   "content": 'Hello World!'
                 }
+                */
+                var view = data;
 
-                view.content = data.page;
                 var template = $('#showTmpl').text();
                 //alert(template);
                 console.log(view);
@@ -103,8 +103,19 @@
                 console.log(html);
                 $('#content').html(html);
 
-            })
-            
+            });
+
+            function changeSize(flag){
+                var size = parseInt($('#content').css('font-size'));
+                //alert(size);
+                switch(flag){
+                    case 'add': size++; break;
+                    case 'reduce': size--; break;
+                    default: break;
+                }  
+                
+                $('#content').css('font-size', size);
+            }
 
         </script>
     </body>

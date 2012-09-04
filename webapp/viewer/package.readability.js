@@ -18,15 +18,15 @@ function start(res, url){
 
   readability.read(url, function(err, read) {
     var dom = read.getDocument();
-    var page = read.getContent();
+    var content = read.getContent();
 
     //替换相对路径 图片等
-    page = page.replace(/src=(['"]?)(?!http:\/\/)([^'"\s>]+)/ig, "src=$1"+domin+"/$2")
+    content = content.replace(/src=(['"]?)(?!http:\/\/)([^'"\s>]+)/ig, "src=$1"+domin+"/$2")
 
-    var data = {};
-    data.title = dom.title;
-    data.url = url;
-    data.page = page;
+    var data    = {};
+    data.title  = dom.title;  //标题
+    data.url    = url;        //链接
+    data.content   = content;       //内容
     
     console.log(JSON.stringify(data));
     res.send(data);
