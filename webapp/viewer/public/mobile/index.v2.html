@@ -74,52 +74,6 @@
 </textarea>
             <div data-role="content" style="padding: 15px">
                 <ul id="newslist" data-role="listview" data-divider-theme="e" data-inset="false">
-                <!--
-                    <li data-role="list-divider" role="heading">
-                        集团新闻
-                    </li>
-                -->
-                <!--
-                    <li data-theme="d">
-                        <a href="#page1" data-transition="slide">
-                            中国石油首个重大科技专项接力攻关结硕果中国石油首个重大科技专项接力攻关结硕果中国石油首个重大科技专项接力攻关结硕果中国石油首个重大科技专项接力攻关结硕果
-                            <span class="ui-li-count">
-                                刚刚
-                            </span>
-                        </a>
-                   
-                        <a href="index.html" class="ui-link-inherit">
-                            <p class="ui-li-aside ui-li-desc"><strong>2分钟前</strong></p>
-                            <h3 class="ui-li-heading">国石油首个重大科技专项接力攻关结硕果</h3>
-                            <p class="ui-li-desc">You've been invited to a meeting at Filament Group in Boston, MA</p>                               
-                        </a>
-                    </li>
-                
-                    <li data-theme="d">
-                        <a href="#page1" data-transition="slide">
-                            中国石油：把先进使用技术转化为现实生产力
-                            <span class="ui-li-count">
-                                10分钟前
-                            </span>
-                        </a>
-                    </li>
-                    <li data-theme="d">
-                        <a href="#page1" data-transition="slide">
-                            浙江销售、上海销售、冀东销售抗击强台风
-                            <span class="ui-li-count">
-                                1小时前
-                            </span>
-                        </a>
-                    </li>
-                    <li data-theme="d">
-                        <a href="#page1" data-transition="slide">
-                            长庆镇原油田创“1/2&gt;1”奇迹
-                            <span class="ui-li-count">
-                                2天前
-                            </span>
-                        </a>
-                    </li>
-                -->
                 </ul>
                 
             </div>
@@ -156,30 +110,13 @@
             </div>
         </div>
         
-        <!--
-        <script src="https://raw.github.com/janl/mustache.js/master/mustache.js">
-        </script>
-        -->
         <script>
-        $.getJSON("/channel/news_zzxw_xwzx_gzwdt", function(json){
+        var url = "/channel/news_zzxw_xwzx_gzwdt";
+        $.getJSON(url, function(json){
             //App custom javascript
                 var view = {
                   "channel":json.channel, /*"通知公告",*/
                   "items":json.items,
-                  /*
-                  [
-                      {"title": "中国石油首个重大科技专项接力攻关结硕果", "link": "http://www.cnpc.com.cn/News/zzxw/xwzx/xwygg/201208/20120815_C5204.shtml","pubDate":"2012-08-15T23:05:00Z"},
-                      {"title": "中国石油首个重大科技专项接力攻关结硕果", "link": "http://localhost:4000/","pubDate":"2012-08-15T15:05:00Z"},
-                      {"title": "中国石油：把先进使用技术转化为现实生产力", "link": "#","pubDate":"2012-08-15T03:05:00Z"},
-                      {"title": "浙江销售、上海销售、冀东销售抗击强台风", "link": "#","pubDate":"2012-08-09T03:05:00Z"}
-                  ],
-                  "imgitems": [
-                      {"title": "中国石油首个重大科技专项接力攻关结硕果", "imgsrc":"http://www.cnpc.com.cn/News/zzxw/xwzx/tpxw/DigitalAssets/56565_811388.jpg","link": "#","pubDate":"2012-08-15T23:05:00Z"},
-                      {"title": "中国石油首个重大科技专项接力攻关结硕果", "imgsrc":"http://www.cnpc.com.cn/News/zzxw/xwzx/tpxw/DigitalAssets/0115472006.jpg","link": "#","pubDate":"2012-08-15T15:05:00Z"},
-                      {"title": "中国石油：把先进使用技术转化为现实生产力", "link": "#","pubDate":"2012-08-15T03:05:00Z"},
-                      {"title": "浙江销售、上海销售、冀东销售抗击强台风", "link": "#","pubDate":"2012-08-09T03:05:00Z"}
-                  ],
-                  */
                   "empty": false,
                   "time": function () {
                     now = new Date().getTime();
@@ -209,10 +146,8 @@
                 var html = Mustache.to_html(template, view);
                 $('#newslist').html(html);
                 //刷新局部列表样式！！
-                //$("div[data-role=content] ul").listview();
+                $("div[data-role=content] ul").listview();
                 $("div[data-role=content] ul").listview("refresh");
-
-                $.mobile.ajaxEnabled = false;
             });
         </script>
     </body>

@@ -35,8 +35,18 @@ app.get('/channel/:path', function(req, res){
   path = req.params.path;
   path = path.replace(/_/ig,'/');
   var getSource = require('./getSource');
-  getSource.getSource(res, path);
-})
+  getSource.start(res, path);
+});
+
+var page = "";
+app.get('/read/*', function(req, res){
+  console.log(req.params);
+  page = req.params[0];
+  //page = page.replace(/_/ig, '/');
+  var readability = require('./package.readability.js');
+  readability.start(res, page);
+});
+
 
 
 http.createServer(app).listen(app.get('port'), function(){

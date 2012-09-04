@@ -3,7 +3,7 @@ var fs = require('fs');
 var FeedParser = require('feedparser')
   , parser = new FeedParser();
 
-function getSource(res, channelPath){
+function start(res, channelPath){
   //parser.parseFile('http://10.21.24.84:8021/rss.aspx?path=/News/zzxw/xwzx/tpxw', myCallback);
   var url = 'http://10.21.24.84:8021/rss.aspx?path=' + channelPath;
   console.log(url);
@@ -37,4 +37,4 @@ function getSource(res, channelPath){
     }
 }
 
-exports.getSource = getSource;
+exports.start = start;

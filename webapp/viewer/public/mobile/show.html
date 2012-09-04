@@ -28,7 +28,7 @@
         <div data-role="page" id="page1" data-add-back-btn="true">
 
             <div data-theme="b" data-role="header" data-position="fixed">
-                
+
                 <div class="right">
                     <span style="font-size:1.3em">字号</span>
                     <span onclick="javascript:$('#content').css('font-size','1.2em');">大</span>
@@ -41,7 +41,7 @@
             </div>
         
 <textarea id="showTmpl" rows="1" cols="1" style="display:none;">
-        {{content}}
+        {{&content}}
 </textarea>
             <div data-role="content" style="padding: 15px" id="content">
                 <!--
@@ -83,16 +83,28 @@
         </div>
         <script>
             //App custom javascript
-            var view = {
-              "url": "http://www.cnpc.com.cn/12345",
-              "title": '中国石油携手新疆维吾尔自治区和新疆生产建设兵团三方合作共同开发红山油田',
-              "content": 'Hello World!'
-            }
-            var template = $('#showTmpl').text();
-            alert(template);
-            console.log(template);
-            var html = Mustache.to_html(template, view);
-            $('#content').html(html);
+            var url = window.location.href;
+            //url = http://192.168.0.136:3000/mobile/show.html?http://www.cnpc.com.cn/news/zzxw/xwzx/gzwdt/201208/20120828_C170.shtml
+            url = url.substring(url.indexOf('?') + 1);
+            url = "/read/"+ url ;
+            $.getJSON(url, function(data){
+
+                var view = {
+                  "url": "http://www.cnpc.com.cn/",
+                  "title": '中国石油携手新疆维吾尔自治区和新疆生产建设兵团三方合作共同开发红山油田',
+                  "content": 'Hello World!'
+                }
+
+                view.content = data.page;
+                var template = $('#showTmpl').text();
+                //alert(template);
+                console.log(view);
+                var html = Mustache.to_html(template, view);
+                console.log(html);
+                $('#content').html(html);
+
+            })
+            
 
         </script>
     </body>
