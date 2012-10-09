@@ -7,7 +7,19 @@ function start(res, channelPath){
   //parser.parseFile('http://10.21.24.84:8021/rss.aspx?path=/News/zzxw/xwzx/tpxw', myCallback);
   var url = 'http://10.21.24.84:8021/rss.aspx?path=' + channelPath;
   console.log(url);
-  parser.parseFile(url, myCallback);
+
+
+  //离线假数据
+  if(1){
+    fs.readFile("source.json","utf-8", function (err, data) {
+      if(err) throw err;
+      console.log(data);
+      res.send(data);
+    });
+  }
+  else{
+    parser.parseFile(url, myCallback);
+  }
   function myCallback (error, meta, articles){
     var channel, view = {};
     var items =[];
