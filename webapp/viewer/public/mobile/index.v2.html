@@ -27,20 +27,28 @@
     </head>
     <body>
         <!-- Home -->
+        <div data-role="page" id="show" data-url="show.html?http://www.cnpc.com.cn/News/zzxw/xwzx/xwygg/201208/20120815_C5204.shtml">
+            <a href="show.html?http://www.cnpc.com.cn/News/zzxw/xwzx/xwygg/201208/20120815_C5204.shtml">click</a>
+        <a href="#" onclick='javascript:$.mobile.changePage("show.html?http://www.cnpc.com.cn/News/zzxw/xwzx/xwygg/201208/20120815_C5204.shtml", "slideup");'>aboutus</a>
+
+        </div>
+        
         <div data-role="page" id="page1">
             <div data-theme="b" data-role="header" data-position="fixed">
                 <h3>
                     中国石油
                 </h3>
+<!--                
                 <a data-role="button" data-transition="fade" href="javascript:window.location.reload();" data-icon="home" data-iconpos="right" class="ui-btn-left">
                     刷新
                 </a>
 
                 <select name="selectChannel" id="selectChannel" class="ui-btn-right" data-mini="true">
-                   <option value="channel1">频道</option>
-                   <option value="channel2">部委动态</option>
-                   <option value="channel3">图片新闻</option>
+                   <option value="http://www.cnpc.com.cn/news/zzxw/xwzx/gzwdt/">国资动态</option>
+                   <option value="http://www.cnpc.com.cn/news/zzxw/xwzx/gcdt/">高层动态</option>
+                   <option value="http://www.cnpc.com.cn/news/zzxw/xwzx/gg/">公告</option>
                 </select>
+-->
             </div>
 <textarea id="newslistTmpl" rows="1" cols="1" style="display:none;">
     <li data-role="list-divider" role="heading">
@@ -86,7 +94,7 @@
                 <div data-role="navbar" data-iconpos="top">
                     <ul>
                         <li>
-                            <a href="#news" data-theme="" data-icon="grid">
+                            <a href="#news" data-theme="" data-icon="grid" onclick="location.reload();">
                                 新闻
                             </a>
                         </li>
@@ -111,44 +119,69 @@
         </div>
         
         <script>
-        var url = "/channel/news_zzxw_xwzx_gzwdt";
-        $.getJSON(url, function(json){
-            //App custom javascript
-                var view = {
-                  "channel":json.channel, /*"通知公告",*/
-                  "items":json.items,
-                  "empty": false,
-                  "time": function () {
-                    now = new Date().getTime();
-                    pubDate = Date.parse(this.pubDate);
-                    console.log(now+'||'+pubDate+'||'+(now-pubDate));
-                    var tmp = Math.floor((now-pubDate)/(1000*60)); //分
+        //禁用ajax渲染模式
+        //$.mobile.ajaxEnabled = false;
 
-                    if (tmp>1)
-                    {
-                        if(tmp>60)
+        $('#selectChannel option').click(function(){alert('is.value');});
+
+        var channelPath = "News/zzxw/xwzx/gcdt";
+        getList(channelPath);
+
+        function getList(channelPath){
+            var path = channelPath||"news/zzxw/xwzx/gzwdt";
+            var url = "/channel/" + path;
+            $.getJSON(url , function(json){
+                //App custom javascript
+                    var view = {
+                      "channel":json.channel, /*"通知公告",*/
+                      "items":json.items,
+                      /*
+                      [
+                          {"title": "中国石油首个重大科技专项接力攻关结硕果", "link": "http://www.cnpc.com.cn/News/zzxw/xwzx/xwygg/201208/20120815_C5204.shtml","pubDate":"2012-08-15T23:05:00Z"},
+                          {"title": "中国石油首个重大科技专项接力攻关结硕果", "link": "http://localhost:4000/","pubDate":"2012-08-15T15:05:00Z"},
+                          {"title": "中国石油：把先进使用技术转化为现实生产力", "link": "#","pubDate":"2012-08-15T03:05:00Z"},
+                          {"title": "浙江销售、上海销售、冀东销售抗击强台风", "link": "#","pubDate":"2012-08-09T03:05:00Z"}
+                      ],
+                      "imgitems": [
+                          {"title": "中国石油首个重大科技专项接力攻关结硕果", "imgsrc":"http://www.cnpc.com.cn/News/zzxw/xwzx/tpxw/DigitalAssets/56565_811388.jpg","link": "#","pubDate":"2012-08-15T23:05:00Z"},
+                          {"title": "中国石油首个重大科技专项接力攻关结硕果", "imgsrc":"http://www.cnpc.com.cn/News/zzxw/xwzx/tpxw/DigitalAssets/0115472006.jpg","link": "#","pubDate":"2012-08-15T15:05:00Z"},
+                          {"title": "中国石油：把先进使用技术转化为现实生产力", "link": "#","pubDate":"2012-08-15T03:05:00Z"},
+                          {"title": "浙江销售、上海销售、冀东销售抗击强台风", "link": "#","pubDate":"2012-08-09T03:05:00Z"}
+                      ],
+                      */
+                      "empty": false,
+                      "time": function () {
+                        now = new Date().getTime();
+                        pubDate = Date.parse(this.pubDate);
+                        console.log(now+'||'+pubDate+'||'+(now-pubDate));
+                        var tmp = Math.floor((now-pubDate)/(1000*60)); //分
+
+                        if (tmp>1)
                         {
-                            tmp = Math.floor(tmp/60);
-                            if(tmp>24)
+                            if(tmp>60)
                             {
-                                tmp = Math.floor(tmp/24);
-                                return tmp+"天前";
+                                tmp = Math.floor(tmp/60);
+                                if(tmp>24)
+                                {
+                                    tmp = Math.floor(tmp/24);
+                                    return tmp+"天前";
+                                }
+                                return tmp+"小时前";
                             }
-                            return tmp+"小时前";
+                            return tmp+"分钟前";
                         }
-                        return tmp+"分钟前";
-                    }
-                    else{return "刚刚";}
-                  }
-                }
+                        else{return "刚刚";}
+                      }
+                    };
                 var template = $('#newslistTmpl').text();
                 console.log(template);
                 var html = Mustache.to_html(template, view);
                 $('#newslist').html(html);
                 //刷新局部列表样式！！
-                $("div[data-role=content] ul").listview();
+                //$("div[data-role=content] ul").listview();
                 $("div[data-role=content] ul").listview("refresh");
             });
+        }
         </script>
     </body>
 </html>
