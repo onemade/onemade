@@ -82,7 +82,7 @@
         <script>
             //App custom javascript
             var url = window.location.href;
-            //url = http://192.168.0.136:3000/mobile/show.html?http://www.cnpc.com.cn/news/zzxw/xwzx/gzwdt/201208/20120828_C170.shtml
+            //url = 'http://192.168.0.136:3000/mobile/show.html?http://www.cnpc.com.cn/news/zzxw/xwzx/gzwdt/201208/20120828_C170.shtml';
             url = url.substring(url.indexOf('?') + 1);
             url = "/read/"+ url ;
             $.getJSON(url, function(data){

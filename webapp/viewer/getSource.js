@@ -10,7 +10,7 @@ function start(res, channelPath){
 
 
   //离线假数据
-  if(1){
+  if(0){
     fs.readFile("source.json","utf-8", function (err, data) {
       if(err) throw err;
       console.log(data);

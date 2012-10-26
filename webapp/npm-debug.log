@@ -1,0 +1,935 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'update', '-dg', 'express' ]
+2 info using npm@1.1.48
+3 info using node@v0.8.6
+4 verbose config file /Users/onemade/.npmrc
+5 verbose config file /usr/local/etc/npmrc
+6 verbose config file /usr/local/lib/node_modules/npm/npmrc
+7 verbose read json /usr/local/lib/package.json
+8 verbose read json /usr/local/lib/node_modules/application-name/package.json
+9 verbose read json /usr/local/lib/node_modules/express/package.json
+10 verbose read json /usr/local/lib/node_modules/iconv/package.json
+11 verbose read json /usr/local/lib/node_modules/jsdom/package.json
+12 verbose read json /usr/local/lib/node_modules/nide/package.json
+13 verbose read json /usr/local/lib/node_modules/node-gyp/package.json
+14 verbose read json /usr/local/lib/node_modules/nodemon/package.json
+15 verbose read json /usr/local/lib/node_modules/npm/package.json
+16 verbose read json /usr/local/lib/node_modules/readability/package.json
+17 verbose read json /usr/local/lib/node_modules/redis/package.json
+18 verbose read json /usr/local/lib/node_modules/supervisor/package.json
+19 verbose from cache /usr/local/lib/node_modules/application-name/package.json
+20 verbose from cache /usr/local/lib/node_modules/jsdom/package.json
+21 verbose from cache /usr/local/lib/node_modules/iconv/package.json
+22 verbose cache add [ 'express', '*' ]
+23 silly cache add name="express" spec="*" args=["express","*"]
+24 verbose parsed url { pathname: '*', path: '*', href: '*' }
+25 verbose addNamed [ 'express', '*' ]
+26 verbose addNamed [ null, '' ]
+27 verbose from cache /usr/local/lib/node_modules/readability/package.json
+28 verbose from cache /usr/local/lib/node_modules/node-gyp/package.json
+29 verbose from cache /usr/local/lib/node_modules/nodemon/package.json
+30 verbose from cache /usr/local/lib/node_modules/redis/package.json
+31 verbose from cache /usr/local/lib/node_modules/npm/package.json
+32 verbose from cache /usr/local/lib/node_modules/nide/package.json
+33 verbose from cache /usr/local/lib/node_modules/supervisor/package.json
+34 verbose read json /usr/local/lib/node_modules/jsdom/node_modules/contextify/package.json
+35 verbose read json /usr/local/lib/node_modules/jsdom/node_modules/cssom/package.json
+36 verbose read json /usr/local/lib/node_modules/jsdom/node_modules/htmlparser/package.json
+37 verbose read json /usr/local/lib/node_modules/jsdom/node_modules/request/package.json
+38 verbose read json /usr/local/lib/node_modules/readability/node_modules/htmlparser/package.json
+39 verbose read json /usr/local/lib/node_modules/readability/node_modules/mjsunit.runner/package.json
+40 verbose read json /usr/local/lib/node_modules/application-name/node_modules/.bin/package.json
+41 verbose read json /usr/local/lib/node_modules/application-name/node_modules/express/package.json
+42 verbose read json /usr/local/lib/node_modules/application-name/node_modules/jade/package.json
+43 silly lockFile 8ad1ad64-express express@*
+44 verbose lock express@* /Users/onemade/.npm/8ad1ad64-express.lock
+45 verbose read json /usr/local/lib/node_modules/npm/node_modules/.bin/package.json
+46 verbose read json /usr/local/lib/node_modules/npm/node_modules/abbrev/package.json
+47 verbose read json /usr/local/lib/node_modules/npm/node_modules/ansi/package.json
+48 verbose read json /usr/local/lib/node_modules/npm/node_modules/archy/package.json
+49 verbose read json /usr/local/lib/node_modules/npm/node_modules/block-stream/package.json
+50 verbose read json /usr/local/lib/node_modules/npm/node_modules/chownr/package.json
+51 verbose read json /usr/local/lib/node_modules/npm/node_modules/couch-login/package.json
+52 verbose read json /usr/local/lib/node_modules/npm/node_modules/fstream/package.json
+53 verbose read json /usr/local/lib/node_modules/npm/node_modules/fstream-npm/package.json
+54 verbose read json /usr/local/lib/node_modules/npm/node_modules/glob/package.json
+55 verbose read json /usr/local/lib/node_modules/npm/node_modules/graceful-fs/package.json
+56 verbose read json /usr/local/lib/node_modules/npm/node_modules/inherits/package.json
+57 verbose read json /usr/local/lib/node_modules/npm/node_modules/ini/package.json
+58 verbose read json /usr/local/lib/node_modules/npm/node_modules/init-package-json/package.json
+59 verbose read json /usr/local/lib/node_modules/npm/node_modules/lockfile/package.json
+60 verbose read json /usr/local/lib/node_modules/npm/node_modules/lru-cache/package.json
+61 verbose read json /usr/local/lib/node_modules/npm/node_modules/minimatch/package.json
+62 verbose read json /usr/local/lib/node_modules/npm/node_modules/mkdirp/package.json
+63 verbose read json /usr/local/lib/node_modules/npm/node_modules/node-gyp/package.json
+64 verbose read json /usr/local/lib/node_modules/npm/node_modules/node-uuid/package.json
+65 verbose read json /usr/local/lib/node_modules/npm/node_modules/nopt/package.json
+66 verbose read json /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/package.json
+67 verbose read json /usr/local/lib/node_modules/npm/node_modules/npmlog/package.json
+68 verbose read json /usr/local/lib/node_modules/npm/node_modules/osenv/package.json
+69 verbose read json /usr/local/lib/node_modules/npm/node_modules/proto-list/package.json
+70 verbose read json /usr/local/lib/node_modules/npm/node_modules/read/package.json
+71 verbose read json /usr/local/lib/node_modules/npm/node_modules/read-installed/package.json
+72 verbose read json /usr/local/lib/node_modules/npm/node_modules/read-package-json/package.json
+73 verbose read json /usr/local/lib/node_modules/npm/node_modules/request/package.json
+74 verbose read json /usr/local/lib/node_modules/npm/node_modules/retry/package.json
+75 verbose read json /usr/local/lib/node_modules/npm/node_modules/rimraf/package.json
+76 verbose read json /usr/local/lib/node_modules/npm/node_modules/semver/package.json
+77 verbose read json /usr/local/lib/node_modules/npm/node_modules/slide/package.json
+78 verbose read json /usr/local/lib/node_modules/npm/node_modules/tar/package.json
+79 verbose read json /usr/local/lib/node_modules/npm/node_modules/uid-number/package.json
+80 verbose read json /usr/local/lib/node_modules/npm/node_modules/which/package.json
+81 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/.bin/package.json
+82 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/fstream/package.json
+83 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/glob/package.json
+84 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/graceful-fs/package.json
+85 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/minimatch/package.json
+86 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/mkdirp/package.json
+87 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/nopt/package.json
+88 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/npmlog/package.json
+89 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/osenv/package.json
+90 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/request/package.json
+91 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/rimraf/package.json
+92 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/semver/package.json
+93 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/tar/package.json
+94 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/which/package.json
+95 verbose read json /usr/local/lib/node_modules/nide/node_modules/.bin/package.json
+96 verbose read json /usr/local/lib/node_modules/nide/node_modules/commander/package.json
+97 verbose read json /usr/local/lib/node_modules/nide/node_modules/dive/package.json
+98 verbose read json /usr/local/lib/node_modules/nide/node_modules/express/package.json
+99 verbose read json /usr/local/lib/node_modules/nide/node_modules/node-uuid/package.json
+100 verbose read json /usr/local/lib/node_modules/nide/node_modules/socket.io/package.json
+101 silly addNameRange { name: 'express', range: '', hasData: false }
+102 verbose url raw express
+103 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+104 verbose url resolved https://registry.npmjs.org/express
+105 info retry registry request attempt 1 at 14:39:19
+106 http GET https://registry.npmjs.org/express
+107 verbose cache add [ 'express', '3.0.0rc3' ]
+108 silly cache add name="express" spec="3.0.0rc3" args=["express","3.0.0rc3"]
+109 verbose parsed url { pathname: '3.0.0rc3', path: '3.0.0rc3', href: '3.0.0rc3' }
+110 verbose addNamed [ 'express', '3.0.0rc3' ]
+111 verbose addNamed [ '3.0.0rc3', '3.0.0rc3' ]
+112 silly lockFile e0f1981e-express-3-0-0rc3 express@3.0.0rc3
+113 verbose lock express@3.0.0rc3 /Users/onemade/.npm/e0f1981e-express-3-0-0rc3.lock
+114 verbose from cache /usr/local/lib/node_modules/application-name/node_modules/jade/package.json
+115 verbose from cache /usr/local/lib/node_modules/jsdom/node_modules/htmlparser/package.json
+116 verbose from cache /usr/local/lib/node_modules/jsdom/node_modules/request/package.json
+117 verbose from cache /usr/local/lib/node_modules/jsdom/node_modules/cssom/package.json
+118 verbose from cache /usr/local/lib/node_modules/jsdom/node_modules/contextify/package.json
+119 verbose from cache /usr/local/lib/node_modules/node-gyp/node_modules/glob/package.json
+120 verbose from cache /usr/local/lib/node_modules/node-gyp/node_modules/graceful-fs/package.json
+121 verbose from cache /usr/local/lib/node_modules/node-gyp/node_modules/fstream/package.json
+122 verbose from cache /usr/local/lib/node_modules/node-gyp/node_modules/minimatch/package.json
+123 verbose from cache /usr/local/lib/node_modules/node-gyp/node_modules/mkdirp/package.json
+124 verbose from cache /usr/local/lib/node_modules/node-gyp/node_modules/nopt/package.json
+125 verbose from cache /usr/local/lib/node_modules/node-gyp/node_modules/npmlog/package.json
+126 verbose from cache /usr/local/lib/node_modules/node-gyp/node_modules/osenv/package.json
+127 verbose from cache /usr/local/lib/node_modules/node-gyp/node_modules/request/package.json
+128 verbose from cache /usr/local/lib/node_modules/node-gyp/node_modules/rimraf/package.json
+129 verbose from cache /usr/local/lib/node_modules/node-gyp/node_modules/semver/package.json
+130 verbose from cache /usr/local/lib/node_modules/node-gyp/node_modules/tar/package.json
+131 verbose from cache /usr/local/lib/node_modules/node-gyp/node_modules/which/package.json
+132 verbose from cache /usr/local/lib/node_modules/readability/node_modules/mjsunit.runner/package.json
+133 verbose read json /usr/local/lib/node_modules/readability/node_modules/jsdom/package.json
+134 verbose from cache /usr/local/lib/node_modules/readability/node_modules/htmlparser/package.json
+135 verbose read json /usr/local/lib/node_modules/application-name/node_modules/jade/node_modules/commander/package.json
+136 verbose read json /usr/local/lib/node_modules/application-name/node_modules/jade/node_modules/mkdirp/package.json
+137 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/fstream/node_modules/inherits/package.json
+138 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/glob/node_modules/inherits/package.json
+139 verbose read json /usr/local/lib/node_modules/jsdom/node_modules/contextify/node_modules/bindings/package.json
+140 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/rimraf/node_modules/graceful-fs/package.json
+141 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/nopt/node_modules/abbrev/package.json
+142 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/tar/node_modules/block-stream/package.json
+143 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/tar/node_modules/inherits/package.json
+144 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/minimatch/node_modules/lru-cache/package.json
+145 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/npmlog/node_modules/.bin/package.json
+146 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/npmlog/node_modules/ansi/package.json
+147 verbose from cache /usr/local/lib/node_modules/npm/node_modules/semver/package.json
+148 verbose from cache /usr/local/lib/node_modules/npm/node_modules/ini/package.json
+149 verbose from cache /usr/local/lib/node_modules/npm/node_modules/slide/package.json
+150 verbose from cache /usr/local/lib/node_modules/npm/node_modules/abbrev/package.json
+151 verbose from cache /usr/local/lib/node_modules/npm/node_modules/graceful-fs/package.json
+152 verbose from cache /usr/local/lib/node_modules/npm/node_modules/minimatch/package.json
+153 verbose from cache /usr/local/lib/node_modules/npm/node_modules/nopt/package.json
+154 verbose from cache /usr/local/lib/node_modules/npm/node_modules/node-uuid/package.json
+155 verbose from cache /usr/local/lib/node_modules/npm/node_modules/proto-list/package.json
+156 verbose from cache /usr/local/lib/node_modules/npm/node_modules/rimraf/package.json
+157 verbose from cache /usr/local/lib/node_modules/npm/node_modules/request/package.json
+158 verbose from cache /usr/local/lib/node_modules/npm/node_modules/which/package.json
+159 verbose from cache /usr/local/lib/node_modules/npm/node_modules/tar/package.json
+160 verbose from cache /usr/local/lib/node_modules/npm/node_modules/fstream/package.json
+161 verbose from cache /usr/local/lib/node_modules/npm/node_modules/block-stream/package.json
+162 verbose from cache /usr/local/lib/node_modules/npm/node_modules/inherits/package.json
+163 verbose from cache /usr/local/lib/node_modules/npm/node_modules/mkdirp/package.json
+164 verbose from cache /usr/local/lib/node_modules/npm/node_modules/read/package.json
+165 verbose from cache /usr/local/lib/node_modules/npm/node_modules/lru-cache/package.json
+166 verbose from cache /usr/local/lib/node_modules/npm/node_modules/node-gyp/package.json
+167 verbose from cache /usr/local/lib/node_modules/npm/node_modules/fstream-npm/package.json
+168 verbose from cache /usr/local/lib/node_modules/npm/node_modules/uid-number/package.json
+169 verbose from cache /usr/local/lib/node_modules/npm/node_modules/archy/package.json
+170 verbose from cache /usr/local/lib/node_modules/npm/node_modules/chownr/package.json
+171 verbose from cache /usr/local/lib/node_modules/npm/node_modules/npmlog/package.json
+172 verbose from cache /usr/local/lib/node_modules/npm/node_modules/ansi/package.json
+173 verbose from cache /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/package.json
+174 verbose from cache /usr/local/lib/node_modules/npm/node_modules/read-package-json/package.json
+175 verbose from cache /usr/local/lib/node_modules/npm/node_modules/read-installed/package.json
+176 verbose from cache /usr/local/lib/node_modules/npm/node_modules/glob/package.json
+177 verbose from cache /usr/local/lib/node_modules/npm/node_modules/init-package-json/package.json
+178 verbose from cache /usr/local/lib/node_modules/npm/node_modules/osenv/package.json
+179 verbose from cache /usr/local/lib/node_modules/npm/node_modules/lockfile/package.json
+180 verbose from cache /usr/local/lib/node_modules/npm/node_modules/retry/package.json
+181 verbose from cache /usr/local/lib/node_modules/npm/node_modules/couch-login/package.json
+182 verbose url raw express/3.0.0rc3
+183 verbose url resolving [ 'https://registry.npmjs.org/', './express/3.0.0rc3' ]
+184 verbose url resolved https://registry.npmjs.org/express/3.0.0rc3
+185 info retry registry request attempt 1 at 14:39:20
+186 verbose etag "B3HJ5N82J0Z0JQYSZ4JGHUCCL"
+187 http GET https://registry.npmjs.org/express/3.0.0rc3
+188 verbose read json /usr/local/lib/node_modules/npm/node_modules/read/node_modules/mute-stream/package.json
+189 verbose read json /usr/local/lib/node_modules/npm/node_modules/fstream-npm/node_modules/fstream-ignore/package.json
+190 verbose read json /usr/local/lib/node_modules/npm/node_modules/init-package-json/node_modules/promzard/package.json
+191 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/fstream/node_modules/rimraf/package.json
+192 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/fstream/node_modules/mkdirp/package.json
+193 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/fstream/node_modules/graceful-fs/package.json
+194 verbose from cache /usr/local/lib/node_modules/node-gyp/node_modules/fstream/node_modules/inherits/package.json
+195 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/glob/node_modules/minimatch/package.json
+196 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/glob/node_modules/graceful-fs/package.json
+197 verbose from cache /usr/local/lib/node_modules/node-gyp/node_modules/glob/node_modules/inherits/package.json
+198 verbose from cache /usr/local/lib/node_modules/jsdom/node_modules/contextify/node_modules/bindings/package.json
+199 verbose from cache /usr/local/lib/node_modules/application-name/node_modules/jade/node_modules/commander/package.json
+200 verbose from cache /usr/local/lib/node_modules/application-name/node_modules/jade/node_modules/mkdirp/package.json
+201 verbose from cache /usr/local/lib/node_modules/node-gyp/node_modules/minimatch/node_modules/lru-cache/package.json
+202 verbose from cache /usr/local/lib/node_modules/node-gyp/node_modules/tar/node_modules/inherits/package.json
+203 verbose from cache /usr/local/lib/node_modules/node-gyp/node_modules/tar/node_modules/block-stream/package.json
+204 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/tar/node_modules/fstream/package.json
+205 verbose from cache /usr/local/lib/node_modules/node-gyp/node_modules/npmlog/node_modules/ansi/package.json
+206 verbose from cache /usr/local/lib/node_modules/node-gyp/node_modules/nopt/node_modules/abbrev/package.json
+207 verbose read json /usr/local/lib/node_modules/npm/node_modules/minimatch/node_modules/lru-cache/package.json
+208 verbose read json /usr/local/lib/node_modules/npm/node_modules/nopt/node_modules/abbrev/package.json
+209 verbose read json /usr/local/lib/node_modules/npm/node_modules/rimraf/node_modules/graceful-fs/package.json
+210 verbose read json /usr/local/lib/node_modules/npm/node_modules/tar/node_modules/inherits/package.json
+211 verbose read json /usr/local/lib/node_modules/npm/node_modules/tar/node_modules/block-stream/package.json
+212 verbose read json /usr/local/lib/node_modules/npm/node_modules/tar/node_modules/fstream/package.json
+213 verbose read json /usr/local/lib/node_modules/npm/node_modules/fstream/node_modules/rimraf/package.json
+214 verbose read json /usr/local/lib/node_modules/npm/node_modules/fstream/node_modules/mkdirp/package.json
+215 verbose read json /usr/local/lib/node_modules/npm/node_modules/fstream/node_modules/graceful-fs/package.json
+216 verbose read json /usr/local/lib/node_modules/npm/node_modules/fstream/node_modules/inherits/package.json
+217 verbose read json /usr/local/lib/node_modules/npm/node_modules/block-stream/node_modules/inherits/package.json
+218 verbose read json /usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/glob/package.json
+219 verbose read json /usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/graceful-fs/package.json
+220 verbose read json /usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/fstream/package.json
+221 verbose read json /usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/minimatch/package.json
+222 verbose read json /usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/mkdirp/package.json
+223 verbose read json /usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/nopt/package.json
+224 verbose read json /usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/npmlog/package.json
+225 verbose read json /usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/osenv/package.json
+226 verbose read json /usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/request/package.json
+227 verbose read json /usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/rimraf/package.json
+228 verbose read json /usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/semver/package.json
+229 verbose read json /usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/tar/package.json
+230 verbose read json /usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/which/package.json
+231 verbose read json /usr/local/lib/node_modules/npm/node_modules/npmlog/node_modules/ansi/package.json
+232 verbose read json /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/node-uuid/package.json
+233 verbose read json /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/request/package.json
+234 verbose read json /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/graceful-fs/package.json
+235 verbose read json /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/semver/package.json
+236 verbose read json /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/slide/package.json
+237 verbose read json /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/chownr/package.json
+238 verbose read json /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/mkdirp/package.json
+239 verbose read json /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/rimraf/package.json
+240 verbose read json /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/retry/package.json
+241 verbose read json /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/couch-login/package.json
+242 verbose read json /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/npmlog/package.json
+243 verbose read json /usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/glob/package.json
+244 verbose read json /usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/lru-cache/package.json
+245 verbose read json /usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/semver/package.json
+246 verbose read json /usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/slide/package.json
+247 verbose read json /usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/npmlog/package.json
+248 verbose read json /usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/graceful-fs/package.json
+249 verbose read json /usr/local/lib/node_modules/npm/node_modules/read-installed/node_modules/semver/package.json
+250 verbose read json /usr/local/lib/node_modules/npm/node_modules/read-installed/node_modules/slide/package.json
+251 verbose read json /usr/local/lib/node_modules/npm/node_modules/read-installed/node_modules/read-package-json/package.json
+252 verbose read json /usr/local/lib/node_modules/npm/node_modules/read-installed/node_modules/graceful-fs/package.json
+253 verbose read json /usr/local/lib/node_modules/npm/node_modules/read-installed/node_modules/npmlog/package.json
+254 verbose read json /usr/local/lib/node_modules/npm/node_modules/glob/node_modules/minimatch/package.json
+255 verbose read json /usr/local/lib/node_modules/npm/node_modules/glob/node_modules/graceful-fs/package.json
+256 verbose read json /usr/local/lib/node_modules/npm/node_modules/glob/node_modules/inherits/package.json
+257 verbose read json /usr/local/lib/node_modules/npm/node_modules/couch-login/node_modules/request/package.json
+258 verbose read json /usr/local/lib/node_modules/node-gyp/node_modules/tar/node_modules/block-stream/node_modules/inherits/package.json
+259 verbose from cache /usr/local/lib/node_modules/npm/node_modules/fstream-npm/node_modules/fstream-ignore/package.json
+260 verbose read json /usr/local/lib/node_modules/npm/node_modules/fstream-npm/node_modules/inherits/package.json
+261 verbose read json /usr/local/lib/node_modules/npm/node_modules/fstream-npm/node_modules/fstream-ignore/node_modules/minimatch/package.json
+262 verbose read json /usr/local/lib/node_modules/npm/node_modules/fstream-npm/node_modules/fstream-ignore/node_modules/fstream/package.json
+263 verbose read json /usr/local/lib/node_modules/npm/node_modules/fstream-npm/node_modules/fstream-ignore/node_modules/inherits/package.json
+264 verbose cache add [ 'express', '~2.5.1' ]
+265 silly cache add name="express" spec="~2.5.1" args=["express","~2.5.1"]
+266 verbose parsed url { pathname: '~2.5.1', path: '~2.5.1', href: '~2.5.1' }
+267 verbose addNamed [ 'express', '~2.5.1' ]
+268 verbose addNamed [ null, '>=2.5.1- <2.6.0-' ]
+269 silly lockFile 2b7b8733-express-2-5-1 express@~2.5.1
+270 verbose lock express@~2.5.1 /Users/onemade/.npm/2b7b8733-express-2-5-1.lock
+271 verbose from cache /usr/local/lib/node_modules/nide/node_modules/commander/package.json
+272 verbose from cache /usr/local/lib/node_modules/nide/node_modules/dive/package.json
+273 verbose from cache /usr/local/lib/node_modules/nide/node_modules/socket.io/package.json
+274 verbose from cache /usr/local/lib/node_modules/nide/node_modules/node-uuid/package.json
+275 silly addNameRange { name: 'express', range: '>=2.5.1- <2.6.0-', hasData: false }
+276 verbose url raw express
+277 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+278 verbose url resolved https://registry.npmjs.org/express
+279 info retry registry request attempt 1 at 14:39:20
+280 http GET https://registry.npmjs.org/express
+281 verbose read json /usr/local/lib/node_modules/nide/node_modules/socket.io/node_modules/policyfile/package.json
+282 verbose read json /usr/local/lib/node_modules/nide/node_modules/socket.io/node_modules/redis/package.json
+283 verbose read json /usr/local/lib/node_modules/nide/node_modules/socket.io/node_modules/socket.io-client/package.json
+284 verbose read json /usr/local/lib/node_modules/nide/node_modules/dive/node_modules/append/package.json
+285 verbose from cache /usr/local/lib/node_modules/npm/node_modules/read/node_modules/mute-stream/package.json
+286 verbose from cache /usr/local/lib/node_modules/npm/node_modules/init-package-json/node_modules/promzard/package.json
+287 verbose read json /usr/local/lib/node_modules/npm/node_modules/init-package-json/node_modules/read/package.json
+288 verbose read json /usr/local/lib/node_modules/npm/node_modules/init-package-json/node_modules/read-package-json/package.json
+289 verbose read json /usr/local/lib/node_modules/npm/node_modules/init-package-json/node_modules/semver/package.json
+290 verbose read json /usr/local/lib/node_modules/npm/node_modules/init-package-json/node_modules/promzard/node_modules/read/package.json
+291 verbose from cache /usr/local/lib/node_modules/nide/node_modules/dive/node_modules/append/package.json
+292 verbose from cache /usr/local/lib/node_modules/nide/node_modules/socket.io/node_modules/socket.io-client/package.json
+293 verbose from cache /usr/local/lib/node_modules/nide/node_modules/socket.io/node_modules/policyfile/package.json
+294 verbose from cache /usr/local/lib/node_modules/nide/node_modules/socket.io/node_modules/redis/package.json
+295 verbose read json /usr/local/lib/node_modules/nide/node_modules/socket.io/node_modules/socket.io-client/node_modules/.bin/package.json
+296 verbose read json /usr/local/lib/node_modules/nide/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/package.json
+297 verbose read json /usr/local/lib/node_modules/nide/node_modules/socket.io/node_modules/socket.io-client/node_modules/websocket-client/package.json
+298 verbose read json /usr/local/lib/node_modules/nide/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/package.json
+299 verbose from cache /usr/local/lib/node_modules/nide/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/package.json
+300 verbose from cache /usr/local/lib/node_modules/nide/node_modules/socket.io/node_modules/socket.io-client/node_modules/websocket-client/package.json
+301 verbose from cache /usr/local/lib/node_modules/nide/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/package.json
+302 http 304 https://registry.npmjs.org/express/3.0.0rc3
+303 silly registry.get cb [ 304,
+303 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+303 silly registry.get     etag: '"B3HJ5N82J0Z0JQYSZ4JGHUCCL"',
+303 silly registry.get     date: 'Fri, 26 Oct 2012 06:39:19 GMT',
+303 silly registry.get     'content-length': '0' } ]
+304 verbose etag express/3.0.0rc3 from cache
+305 verbose read json /Users/onemade/.npm/express/3.0.0rc3/package/package.json
+306 silly lockFile e0f1981e-express-3-0-0rc3 express@3.0.0rc3
+307 verbose from cache /usr/local/lib/node_modules/application-name/node_modules/express/package.json
+308 verbose read json /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/commander/package.json
+309 verbose read json /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/connect/package.json
+310 verbose read json /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/cookie/package.json
+311 verbose read json /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/crc/package.json
+312 verbose read json /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/debug/package.json
+313 verbose read json /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/fresh/package.json
+314 verbose read json /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/methods/package.json
+315 verbose read json /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/mkdirp/package.json
+316 verbose read json /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/range-parser/package.json
+317 verbose read json /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/send/package.json
+318 verbose from cache /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/connect/package.json
+319 verbose from cache /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/commander/package.json
+320 verbose from cache /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/range-parser/package.json
+321 verbose from cache /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/mkdirp/package.json
+322 verbose from cache /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/cookie/package.json
+323 verbose from cache /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/crc/package.json
+324 verbose from cache /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/fresh/package.json
+325 verbose from cache /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/methods/package.json
+326 verbose from cache /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/send/package.json
+327 verbose from cache /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/debug/package.json
+328 verbose read json /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/connect/node_modules/bytes/package.json
+329 verbose read json /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/connect/node_modules/formidable/package.json
+330 verbose read json /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/connect/node_modules/pause/package.json
+331 verbose read json /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/connect/node_modules/qs/package.json
+332 verbose read json /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/send/node_modules/mime/package.json
+333 verbose from cache /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/connect/node_modules/qs/package.json
+334 verbose from cache /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/connect/node_modules/formidable/package.json
+335 verbose read json /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/connect/node_modules/crc/package.json
+336 verbose read json /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/connect/node_modules/cookie/package.json
+337 verbose from cache /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/connect/node_modules/bytes/package.json
+338 verbose read json /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/connect/node_modules/send/package.json
+339 verbose read json /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/connect/node_modules/fresh/package.json
+340 verbose from cache /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/connect/node_modules/pause/package.json
+341 verbose read json /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/connect/node_modules/debug/package.json
+342 verbose read json /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/send/node_modules/debug/package.json
+343 verbose from cache /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/send/node_modules/mime/package.json
+344 verbose read json /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/send/node_modules/fresh/package.json
+345 verbose read json /usr/local/lib/node_modules/application-name/node_modules/express/node_modules/send/node_modules/range-parser/package.json
+346 http 200 https://registry.npmjs.org/express
+347 silly registry.get cb [ 200,
+347 silly registry.get   { vary: 'Accept',
+347 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+347 silly registry.get     etag: '"B3HJ5N82J0Z0JQYSZ4JGHUCCL"',
+347 silly registry.get     date: 'Fri, 26 Oct 2012 06:39:19 GMT',
+347 silly registry.get     'content-type': 'application/json',
+347 silly registry.get     'content-length': '215598' } ]
+348 silly addNameRange number 2 { name: 'express', range: '', hasData: true }
+349 silly addNameRange versions [ 'express',
+349 silly addNameRange   [ '0.14.0',
+349 silly addNameRange     '0.14.1',
+349 silly addNameRange     '1.0.0beta',
+349 silly addNameRange     '1.0.0beta2',
+349 silly addNameRange     '1.0.0rc',
+349 silly addNameRange     '1.0.0rc2',
+349 silly addNameRange     '1.0.0rc3',
+349 silly addNameRange     '1.0.0rc4',
+349 silly addNameRange     '1.0.0',
+349 silly addNameRange     '1.0.1',
+349 silly addNameRange     '1.0.2',
+349 silly addNameRange     '1.0.3',
+349 silly addNameRange     '1.0.4',
+349 silly addNameRange     '1.0.5',
+349 silly addNameRange     '1.0.6',
+349 silly addNameRange     '1.0.7',
+349 silly addNameRange     '2.0.0beta',
+349 silly addNameRange     '1.0.8',
+349 silly addNameRange     '2.0.0beta2',
+349 silly addNameRange     '2.0.0beta3',
+349 silly addNameRange     '2.0.0rc',
+349 silly addNameRange     '2.0.0rc2',
+349 silly addNameRange     '2.0.0rc3',
+349 silly addNameRange     '2.0.0',
+349 silly addNameRange     '2.1.0',
+349 silly addNameRange     '2.1.1',
+349 silly addNameRange     '2.2.0',
+349 silly addNameRange     '2.2.1',
+349 silly addNameRange     '2.2.2',
+349 silly addNameRange     '2.3.0',
+349 silly addNameRange     '2.3.1',
+349 silly addNameRange     '2.3.2',
+349 silly addNameRange     '2.3.3',
+349 silly addNameRange     '2.3.4',
+349 silly addNameRange     '2.3.5',
+349 silly addNameRange     '2.3.6',
+349 silly addNameRange     '2.3.7',
+349 silly addNameRange     '2.3.8',
+349 silly addNameRange     '2.3.9',
+349 silly addNameRange     '2.3.10',
+349 silly addNameRange     '2.3.11',
+349 silly addNameRange     '2.3.12',
+349 silly addNameRange     '2.4.0',
+349 silly addNameRange     '2.4.1',
+349 silly addNameRange     '2.4.2',
+349 silly addNameRange     '2.4.3',
+349 silly addNameRange     '2.4.4',
+349 silly addNameRange     '2.4.5',
+349 silly addNameRange     '2.4.6',
+349 silly addNameRange     '2.4.7',
+349 silly addNameRange     '2.5.0',
+349 silly addNameRange     '2.5.1',
+349 silly addNameRange     '2.5.2',
+349 silly addNameRange     '2.5.3',
+349 silly addNameRange     '2.5.4',
+349 silly addNameRange     '2.5.5',
+349 silly addNameRange     '2.5.6',
+349 silly addNameRange     '2.5.7',
+349 silly addNameRange     '2.5.8',
+349 silly addNameRange     '2.5.9',
+349 silly addNameRange     '3.0.0alpha1',
+349 silly addNameRange     '3.0.0alpha2',
+349 silly addNameRange     '3.0.0alpha3',
+349 silly addNameRange     '3.0.0alpha4',
+349 silly addNameRange     '3.0.0alpha5',
+349 silly addNameRange     '3.0.0beta1',
+349 silly addNameRange     '3.0.0beta2',
+349 silly addNameRange     '3.0.0beta3',
+349 silly addNameRange     '2.5.10',
+349 silly addNameRange     '3.0.0beta4',
+349 silly addNameRange     '2.5.11',
+349 silly addNameRange     '3.0.0beta6',
+349 silly addNameRange     '3.0.0beta7',
+349 silly addNameRange     '3.0.0rc1',
+349 silly addNameRange     '3.0.0rc2',
+349 silly addNameRange     '3.0.0rc3',
+349 silly addNameRange     '3.0.0rc4',
+349 silly addNameRange     '3.0.0rc5',
+349 silly addNameRange     '3.0.0' ] ]
+350 verbose addNamed [ 'express', '3.0.0' ]
+351 verbose addNamed [ '3.0.0', '3.0.0' ]
+352 silly lockFile 35596296-express-3-0-0 express@3.0.0
+353 verbose lock express@3.0.0 /Users/onemade/.npm/35596296-express-3-0-0.lock
+354 silly lockFile c3d3d32d-js-org-express-express-3-0-0-tgz https://registry.npmjs.org/express/-/express-3.0.0.tgz
+355 verbose lock https://registry.npmjs.org/express/-/express-3.0.0.tgz /Users/onemade/.npm/c3d3d32d-js-org-express-express-3-0-0-tgz.lock
+356 verbose addRemoteTarball [ 'https://registry.npmjs.org/express/-/express-3.0.0.tgz',
+356 verbose addRemoteTarball   '41e202f3627ea442be9e86d5ec51246ad72339ed' ]
+357 info retry fetch attempt 1 at 14:39:48
+358 verbose fetch to= /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233588666-0.35738060367293656/tmp.tgz
+359 http GET https://registry.npmjs.org/express/-/express-3.0.0.tgz
+360 http 200 https://registry.npmjs.org/express/-/express-3.0.0.tgz
+361 http 200 https://registry.npmjs.org/express
+362 silly registry.get cb [ 200,
+362 silly registry.get   { vary: 'Accept',
+362 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+362 silly registry.get     etag: '"B3HJ5N82J0Z0JQYSZ4JGHUCCL"',
+362 silly registry.get     date: 'Fri, 26 Oct 2012 06:39:21 GMT',
+362 silly registry.get     'content-type': 'application/json',
+362 silly registry.get     'content-length': '215598' } ]
+363 silly addNameRange number 2 { name: 'express', range: '>=2.5.1- <2.6.0-', hasData: true }
+364 silly addNameRange versions [ 'express',
+364 silly addNameRange   [ '0.14.0',
+364 silly addNameRange     '0.14.1',
+364 silly addNameRange     '1.0.0beta',
+364 silly addNameRange     '1.0.0beta2',
+364 silly addNameRange     '1.0.0rc',
+364 silly addNameRange     '1.0.0rc2',
+364 silly addNameRange     '1.0.0rc3',
+364 silly addNameRange     '1.0.0rc4',
+364 silly addNameRange     '1.0.0',
+364 silly addNameRange     '1.0.1',
+364 silly addNameRange     '1.0.2',
+364 silly addNameRange     '1.0.3',
+364 silly addNameRange     '1.0.4',
+364 silly addNameRange     '1.0.5',
+364 silly addNameRange     '1.0.6',
+364 silly addNameRange     '1.0.7',
+364 silly addNameRange     '2.0.0beta',
+364 silly addNameRange     '1.0.8',
+364 silly addNameRange     '2.0.0beta2',
+364 silly addNameRange     '2.0.0beta3',
+364 silly addNameRange     '2.0.0rc',
+364 silly addNameRange     '2.0.0rc2',
+364 silly addNameRange     '2.0.0rc3',
+364 silly addNameRange     '2.0.0',
+364 silly addNameRange     '2.1.0',
+364 silly addNameRange     '2.1.1',
+364 silly addNameRange     '2.2.0',
+364 silly addNameRange     '2.2.1',
+364 silly addNameRange     '2.2.2',
+364 silly addNameRange     '2.3.0',
+364 silly addNameRange     '2.3.1',
+364 silly addNameRange     '2.3.2',
+364 silly addNameRange     '2.3.3',
+364 silly addNameRange     '2.3.4',
+364 silly addNameRange     '2.3.5',
+364 silly addNameRange     '2.3.6',
+364 silly addNameRange     '2.3.7',
+364 silly addNameRange     '2.3.8',
+364 silly addNameRange     '2.3.9',
+364 silly addNameRange     '2.3.10',
+364 silly addNameRange     '2.3.11',
+364 silly addNameRange     '2.3.12',
+364 silly addNameRange     '2.4.0',
+364 silly addNameRange     '2.4.1',
+364 silly addNameRange     '2.4.2',
+364 silly addNameRange     '2.4.3',
+364 silly addNameRange     '2.4.4',
+364 silly addNameRange     '2.4.5',
+364 silly addNameRange     '2.4.6',
+364 silly addNameRange     '2.4.7',
+364 silly addNameRange     '2.5.0',
+364 silly addNameRange     '2.5.1',
+364 silly addNameRange     '2.5.2',
+364 silly addNameRange     '2.5.3',
+364 silly addNameRange     '2.5.4',
+364 silly addNameRange     '2.5.5',
+364 silly addNameRange     '2.5.6',
+364 silly addNameRange     '2.5.7',
+364 silly addNameRange     '2.5.8',
+364 silly addNameRange     '2.5.9',
+364 silly addNameRange     '3.0.0alpha1',
+364 silly addNameRange     '3.0.0alpha2',
+364 silly addNameRange     '3.0.0alpha3',
+364 silly addNameRange     '3.0.0alpha4',
+364 silly addNameRange     '3.0.0alpha5',
+364 silly addNameRange     '3.0.0beta1',
+364 silly addNameRange     '3.0.0beta2',
+364 silly addNameRange     '3.0.0beta3',
+364 silly addNameRange     '2.5.10',
+364 silly addNameRange     '3.0.0beta4',
+364 silly addNameRange     '2.5.11',
+364 silly addNameRange     '3.0.0beta6',
+364 silly addNameRange     '3.0.0beta7',
+364 silly addNameRange     '3.0.0rc1',
+364 silly addNameRange     '3.0.0rc2',
+364 silly addNameRange     '3.0.0rc3',
+364 silly addNameRange     '3.0.0rc4',
+364 silly addNameRange     '3.0.0rc5',
+364 silly addNameRange     '3.0.0' ] ]
+365 verbose addNamed [ 'express', '2.5.11' ]
+366 verbose addNamed [ '2.5.11', '2.5.11' ]
+367 silly lockFile 631042f2-express-2-5-11 express@2.5.11
+368 verbose lock express@2.5.11 /Users/onemade/.npm/631042f2-express-2-5-11.lock
+369 silly lockFile ba242734-s-org-express-express-2-5-11-tgz https://registry.npmjs.org/express/-/express-2.5.11.tgz
+370 verbose lock https://registry.npmjs.org/express/-/express-2.5.11.tgz /Users/onemade/.npm/ba242734-s-org-express-express-2-5-11-tgz.lock
+371 verbose addRemoteTarball [ 'https://registry.npmjs.org/express/-/express-2.5.11.tgz',
+371 verbose addRemoteTarball   '4ce8ea1f3635e69e49f0ebb497b6a4b0a51ce6f0' ]
+372 info retry fetch attempt 1 at 14:39:51
+373 verbose fetch to= /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233591502-0.3660604851320386/tmp.tgz
+374 http GET https://registry.npmjs.org/express/-/express-2.5.11.tgz
+375 silly shasum updated bytes 35953
+376 info shasum 41e202f3627ea442be9e86d5ec51246ad72339ed
+376 info shasum /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233588666-0.35738060367293656/tmp.tgz
+377 verbose tar unpack /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233588666-0.35738060367293656/tmp.tgz
+378 silly lockFile ce2fd820-8666-0-35738060367293656-package /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233588666-0.35738060367293656/package
+379 verbose lock /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233588666-0.35738060367293656/package /Users/onemade/.npm/ce2fd820-8666-0-35738060367293656-package.lock
+380 silly gunzTarPerm modes [ '755', '644' ]
+381 silly gunzTarPerm extractEntry package.json
+382 silly gunzTarPerm extractEntry .npmignore
+383 silly gunzTarPerm extractEntry LICENSE
+384 silly gunzTarPerm extractEntry client.js
+385 silly gunzTarPerm extractEntry index.js
+386 silly gunzTarPerm extractEntry test.js
+387 silly gunzTarPerm extractEntry .travis.yml
+388 silly gunzTarPerm extractEntry History.md
+389 silly gunzTarPerm extractEntry Makefile
+390 silly gunzTarPerm extractEntry out.dat
+391 silly gunzTarPerm extractEntry bin/express
+392 silly gunzTarPerm extractEntry Readme.md
+393 silly gunzTarPerm extractEntry lib/application.js
+394 silly gunzTarPerm extractEntry lib/express.js
+395 silly gunzTarPerm extractEntry lib/middleware.js
+396 silly gunzTarPerm extractEntry lib/request.js
+397 silly gunzTarPerm extractEntry lib/response.js
+398 silly gunzTarPerm extractEntry lib/utils.js
+399 silly gunzTarPerm extractEntry lib/view.js
+400 silly gunzTarPerm extractEntry lib/router/index.js
+401 silly gunzTarPerm extractEntry lib/router/route.js
+402 verbose read json /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233588666-0.35738060367293656/package/package.json
+403 silly lockFile ce2fd820-8666-0-35738060367293656-package /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233588666-0.35738060367293656/package
+404 verbose from cache /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233588666-0.35738060367293656/package/package.json
+405 verbose tar pack [ '/Users/onemade/.npm/express/3.0.0/package.tgz',
+405 verbose tar pack   '/var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233588666-0.35738060367293656/package' ]
+406 verbose tarball /Users/onemade/.npm/express/3.0.0/package.tgz
+407 verbose folder /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233588666-0.35738060367293656/package
+408 silly lockFile 14358277-de-npm-express-3-0-0-package-tgz /Users/onemade/.npm/express/3.0.0/package.tgz
+409 verbose lock /Users/onemade/.npm/express/3.0.0/package.tgz /Users/onemade/.npm/14358277-de-npm-express-3-0-0-package-tgz.lock
+410 silly lockFile 14358277-de-npm-express-3-0-0-package-tgz /Users/onemade/.npm/express/3.0.0/package.tgz
+411 silly lockFile a56ec0f2-nemade-npm-express-3-0-0-package /Users/onemade/.npm/express/3.0.0/package
+412 verbose lock /Users/onemade/.npm/express/3.0.0/package /Users/onemade/.npm/a56ec0f2-nemade-npm-express-3-0-0-package.lock
+413 silly lockFile a56ec0f2-nemade-npm-express-3-0-0-package /Users/onemade/.npm/express/3.0.0/package
+414 verbose tar unpack /Users/onemade/.npm/express/3.0.0/package.tgz
+415 silly lockFile a56ec0f2-nemade-npm-express-3-0-0-package /Users/onemade/.npm/express/3.0.0/package
+416 verbose lock /Users/onemade/.npm/express/3.0.0/package /Users/onemade/.npm/a56ec0f2-nemade-npm-express-3-0-0-package.lock
+417 silly gunzTarPerm modes [ '755', '644' ]
+418 silly gunzTarPerm extractEntry package.json
+419 silly gunzTarPerm extractEntry .npmignore
+420 silly gunzTarPerm extractEntry LICENSE
+421 silly gunzTarPerm extractEntry client.js
+422 silly gunzTarPerm extractEntry index.js
+423 silly gunzTarPerm extractEntry test.js
+424 silly gunzTarPerm extractEntry .travis.yml
+425 silly gunzTarPerm extractEntry History.md
+426 silly gunzTarPerm extractEntry Makefile
+427 silly gunzTarPerm extractEntry out.dat
+428 silly gunzTarPerm extractEntry bin/express
+429 silly gunzTarPerm extractEntry Readme.md
+430 silly gunzTarPerm extractEntry lib/application.js
+431 silly gunzTarPerm extractEntry lib/express.js
+432 silly gunzTarPerm extractEntry lib/middleware.js
+433 silly gunzTarPerm extractEntry lib/request.js
+434 silly gunzTarPerm extractEntry lib/response.js
+435 silly gunzTarPerm extractEntry lib/utils.js
+436 silly gunzTarPerm extractEntry lib/view.js
+437 silly gunzTarPerm extractEntry lib/router/index.js
+438 silly gunzTarPerm extractEntry lib/router/route.js
+439 verbose read json /Users/onemade/.npm/express/3.0.0/package/package.json
+440 silly lockFile a56ec0f2-nemade-npm-express-3-0-0-package /Users/onemade/.npm/express/3.0.0/package
+441 silly shasum updated bytes 35953
+442 info shasum 41e202f3627ea442be9e86d5ec51246ad72339ed
+442 info shasum /Users/onemade/.npm/express/3.0.0/package.tgz
+443 verbose from cache /Users/onemade/.npm/express/3.0.0/package/package.json
+444 verbose chmod /Users/onemade/.npm/express/3.0.0/package.tgz 644
+445 verbose chown /Users/onemade/.npm/express/3.0.0/package.tgz [ 501, 20 ]
+446 silly lockFile c3d3d32d-js-org-express-express-3-0-0-tgz https://registry.npmjs.org/express/-/express-3.0.0.tgz
+447 silly lockFile 35596296-express-3-0-0 express@3.0.0
+448 silly lockFile 8ad1ad64-express express@*
+449 http 200 https://registry.npmjs.org/express/-/express-2.5.11.tgz
+450 silly shasum updated bytes 34175
+451 info shasum 4ce8ea1f3635e69e49f0ebb497b6a4b0a51ce6f0
+451 info shasum /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233591502-0.3660604851320386/tmp.tgz
+452 verbose tar unpack /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233591502-0.3660604851320386/tmp.tgz
+453 silly lockFile 59ee28b8-91502-0-3660604851320386-package /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233591502-0.3660604851320386/package
+454 verbose lock /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233591502-0.3660604851320386/package /Users/onemade/.npm/59ee28b8-91502-0-3660604851320386-package.lock
+455 silly gunzTarPerm modes [ '755', '644' ]
+456 silly gunzTarPerm extractEntry package.json
+457 silly gunzTarPerm extractEntry .npmignore
+458 silly gunzTarPerm extractEntry LICENSE
+459 silly gunzTarPerm extractEntry index.js
+460 silly gunzTarPerm extractEntry test.js
+461 silly gunzTarPerm extractEntry bin/express
+462 silly gunzTarPerm extractEntry History.md
+463 silly gunzTarPerm extractEntry lib/express.js
+464 silly gunzTarPerm extractEntry lib/http.js
+465 silly gunzTarPerm extractEntry lib/https.js
+466 silly gunzTarPerm extractEntry lib/request.js
+467 silly gunzTarPerm extractEntry lib/response.js
+468 silly gunzTarPerm extractEntry lib/utils.js
+469 silly gunzTarPerm extractEntry lib/view.js
+470 silly gunzTarPerm extractEntry lib/router/collection.js
+471 silly gunzTarPerm extractEntry lib/router/index.js
+472 silly gunzTarPerm extractEntry lib/router/methods.js
+473 silly gunzTarPerm extractEntry lib/router/route.js
+474 silly gunzTarPerm extractEntry lib/view/partial.js
+475 silly gunzTarPerm extractEntry lib/view/view.js
+476 silly gunzTarPerm extractEntry Makefile
+477 silly gunzTarPerm extractEntry Readme.md
+478 verbose read json /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233591502-0.3660604851320386/package/package.json
+479 silly lockFile 59ee28b8-91502-0-3660604851320386-package /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233591502-0.3660604851320386/package
+480 verbose from cache /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233591502-0.3660604851320386/package/package.json
+481 verbose tar pack [ '/Users/onemade/.npm/express/2.5.11/package.tgz',
+481 verbose tar pack   '/var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233591502-0.3660604851320386/package' ]
+482 verbose tarball /Users/onemade/.npm/express/2.5.11/package.tgz
+483 verbose folder /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233591502-0.3660604851320386/package
+484 silly lockFile 47f8d63e-e-npm-express-2-5-11-package-tgz /Users/onemade/.npm/express/2.5.11/package.tgz
+485 verbose lock /Users/onemade/.npm/express/2.5.11/package.tgz /Users/onemade/.npm/47f8d63e-e-npm-express-2-5-11-package-tgz.lock
+486 silly lockFile 47f8d63e-e-npm-express-2-5-11-package-tgz /Users/onemade/.npm/express/2.5.11/package.tgz
+487 silly lockFile cc32aafb-emade-npm-express-2-5-11-package /Users/onemade/.npm/express/2.5.11/package
+488 verbose lock /Users/onemade/.npm/express/2.5.11/package /Users/onemade/.npm/cc32aafb-emade-npm-express-2-5-11-package.lock
+489 silly lockFile cc32aafb-emade-npm-express-2-5-11-package /Users/onemade/.npm/express/2.5.11/package
+490 verbose tar unpack /Users/onemade/.npm/express/2.5.11/package.tgz
+491 silly lockFile cc32aafb-emade-npm-express-2-5-11-package /Users/onemade/.npm/express/2.5.11/package
+492 verbose lock /Users/onemade/.npm/express/2.5.11/package /Users/onemade/.npm/cc32aafb-emade-npm-express-2-5-11-package.lock
+493 silly gunzTarPerm modes [ '755', '644' ]
+494 silly gunzTarPerm extractEntry package.json
+495 silly gunzTarPerm extractEntry .npmignore
+496 silly gunzTarPerm extractEntry LICENSE
+497 silly gunzTarPerm extractEntry index.js
+498 silly gunzTarPerm extractEntry test.js
+499 silly gunzTarPerm extractEntry bin/express
+500 silly gunzTarPerm extractEntry History.md
+501 silly gunzTarPerm extractEntry lib/express.js
+502 silly gunzTarPerm extractEntry lib/http.js
+503 silly gunzTarPerm extractEntry lib/https.js
+504 silly gunzTarPerm extractEntry lib/request.js
+505 silly gunzTarPerm extractEntry lib/response.js
+506 silly gunzTarPerm extractEntry lib/utils.js
+507 silly gunzTarPerm extractEntry lib/view.js
+508 silly gunzTarPerm extractEntry lib/router/collection.js
+509 silly gunzTarPerm extractEntry lib/router/index.js
+510 silly gunzTarPerm extractEntry lib/router/methods.js
+511 silly gunzTarPerm extractEntry lib/router/route.js
+512 silly gunzTarPerm extractEntry lib/view/partial.js
+513 silly gunzTarPerm extractEntry lib/view/view.js
+514 silly gunzTarPerm extractEntry Makefile
+515 silly gunzTarPerm extractEntry Readme.md
+516 verbose read json /Users/onemade/.npm/express/2.5.11/package/package.json
+517 silly lockFile cc32aafb-emade-npm-express-2-5-11-package /Users/onemade/.npm/express/2.5.11/package
+518 silly shasum updated bytes 34175
+519 info shasum 4ce8ea1f3635e69e49f0ebb497b6a4b0a51ce6f0
+519 info shasum /Users/onemade/.npm/express/2.5.11/package.tgz
+520 verbose from cache /Users/onemade/.npm/express/2.5.11/package/package.json
+521 verbose chmod /Users/onemade/.npm/express/2.5.11/package.tgz 644
+522 verbose chown /Users/onemade/.npm/express/2.5.11/package.tgz [ 501, 20 ]
+523 silly lockFile ba242734-s-org-express-express-2-5-11-tgz https://registry.npmjs.org/express/-/express-2.5.11.tgz
+524 silly lockFile 631042f2-express-2-5-11 express@2.5.11
+525 silly lockFile 2b7b8733-express-2-5-1 express@~2.5.1
+526 info outdated updating [ [ '/usr/local/lib', 'express', '3.0.0rc3', '3.0.0' ],
+526 info outdated   [ '/usr/local/lib/node_modules/nide',
+526 info outdated     'express',
+526 info outdated     '2.5.4',
+526 info outdated     '2.5.11' ] ]
+527 verbose install where,what [ '/usr/local/lib', [ 'express@3.0.0' ] ]
+528 verbose install where,what [ '/usr/local/lib/node_modules/nide', [ 'express@2.5.11' ] ]
+529 verbose read json /usr/local/lib/package.json
+530 verbose from cache /usr/local/lib/node_modules/nide/package.json
+531 verbose from cache /usr/local/lib/node_modules/nide/package.json
+532 verbose read json /usr/local/lib/package.json
+533 verbose readDependencies using package.json deps
+534 verbose cache add [ 'express@2.5.11', null ]
+535 silly cache add name=undefined spec="express@2.5.11" args=["express@2.5.11",null]
+536 verbose parsed url { pathname: 'express@2.5.11',
+536 verbose parsed url   path: 'express@2.5.11',
+536 verbose parsed url   href: 'express@2.5.11' }
+537 silly cache add name="express" spec="2.5.11" args=["express","2.5.11"]
+538 verbose parsed url { pathname: '2.5.11', path: '2.5.11', href: '2.5.11' }
+539 verbose addNamed [ 'express', '2.5.11' ]
+540 verbose addNamed [ '2.5.11', '2.5.11' ]
+541 silly lockFile 631042f2-express-2-5-11 express@2.5.11
+542 verbose lock express@2.5.11 /Users/onemade/.npm/631042f2-express-2-5-11.lock
+543 verbose cache add [ 'express@3.0.0', null ]
+544 silly cache add name=undefined spec="express@3.0.0" args=["express@3.0.0",null]
+545 verbose parsed url { pathname: 'express@3.0.0',
+545 verbose parsed url   path: 'express@3.0.0',
+545 verbose parsed url   href: 'express@3.0.0' }
+546 silly cache add name="express" spec="3.0.0" args=["express","3.0.0"]
+547 verbose parsed url { pathname: '3.0.0', path: '3.0.0', href: '3.0.0' }
+548 verbose addNamed [ 'express', '3.0.0' ]
+549 verbose addNamed [ '3.0.0', '3.0.0' ]
+550 silly lockFile 35596296-express-3-0-0 express@3.0.0
+551 verbose lock express@3.0.0 /Users/onemade/.npm/35596296-express-3-0-0.lock
+552 verbose url raw express/2.5.11
+553 verbose url resolving [ 'https://registry.npmjs.org/', './express/2.5.11' ]
+554 verbose url resolved https://registry.npmjs.org/express/2.5.11
+555 info retry registry request attempt 1 at 14:39:58
+556 http GET https://registry.npmjs.org/express/2.5.11
+557 verbose url raw express/3.0.0
+558 verbose url resolving [ 'https://registry.npmjs.org/', './express/3.0.0' ]
+559 verbose url resolved https://registry.npmjs.org/express/3.0.0
+560 info retry registry request attempt 1 at 14:39:58
+561 http GET https://registry.npmjs.org/express/3.0.0
+562 http 200 https://registry.npmjs.org/express/2.5.11
+563 silly registry.get cb [ 200,
+563 silly registry.get   { vary: 'Accept',
+563 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+563 silly registry.get     etag: '"B3HJ5N82J0Z0JQYSZ4JGHUCCL"',
+563 silly registry.get     date: 'Fri, 26 Oct 2012 06:39:56 GMT',
+563 silly registry.get     'content-type': 'application/json',
+563 silly registry.get     'content-length': '6150' } ]
+564 silly lockFile ba242734-s-org-express-express-2-5-11-tgz https://registry.npmjs.org/express/-/express-2.5.11.tgz
+565 verbose lock https://registry.npmjs.org/express/-/express-2.5.11.tgz /Users/onemade/.npm/ba242734-s-org-express-express-2-5-11-tgz.lock
+566 verbose addRemoteTarball [ 'https://registry.npmjs.org/express/-/express-2.5.11.tgz',
+566 verbose addRemoteTarball   '4ce8ea1f3635e69e49f0ebb497b6a4b0a51ce6f0' ]
+567 info retry fetch attempt 1 at 14:40:01
+568 verbose fetch to= /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233601485-0.29836461995728314/tmp.tgz
+569 http GET https://registry.npmjs.org/express/-/express-2.5.11.tgz
+570 http 200 https://registry.npmjs.org/express/3.0.0
+571 silly registry.get cb [ 200,
+571 silly registry.get   { vary: 'Accept',
+571 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+571 silly registry.get     etag: '"B3HJ5N82J0Z0JQYSZ4JGHUCCL"',
+571 silly registry.get     date: 'Fri, 26 Oct 2012 06:39:58 GMT',
+571 silly registry.get     'content-type': 'application/json',
+571 silly registry.get     'content-length': '7529' } ]
+572 silly lockFile c3d3d32d-js-org-express-express-3-0-0-tgz https://registry.npmjs.org/express/-/express-3.0.0.tgz
+573 verbose lock https://registry.npmjs.org/express/-/express-3.0.0.tgz /Users/onemade/.npm/c3d3d32d-js-org-express-express-3-0-0-tgz.lock
+574 verbose addRemoteTarball [ 'https://registry.npmjs.org/express/-/express-3.0.0.tgz',
+574 verbose addRemoteTarball   '41e202f3627ea442be9e86d5ec51246ad72339ed' ]
+575 info retry fetch attempt 1 at 14:40:02
+576 verbose fetch to= /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233602747-0.922994271852076/tmp.tgz
+577 http GET https://registry.npmjs.org/express/-/express-3.0.0.tgz
+578 http 200 https://registry.npmjs.org/express/-/express-3.0.0.tgz
+579 http 200 https://registry.npmjs.org/express/-/express-2.5.11.tgz
+580 silly shasum updated bytes 35953
+581 info shasum 41e202f3627ea442be9e86d5ec51246ad72339ed
+581 info shasum /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233602747-0.922994271852076/tmp.tgz
+582 verbose tar unpack /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233602747-0.922994271852076/tmp.tgz
+583 silly lockFile 7bf596ea-602747-0-922994271852076-package /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233602747-0.922994271852076/package
+584 verbose lock /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233602747-0.922994271852076/package /Users/onemade/.npm/7bf596ea-602747-0-922994271852076-package.lock
+585 silly gunzTarPerm modes [ '755', '644' ]
+586 silly gunzTarPerm extractEntry package.json
+587 silly gunzTarPerm extractEntry .npmignore
+588 silly gunzTarPerm extractEntry LICENSE
+589 silly gunzTarPerm extractEntry client.js
+590 silly gunzTarPerm extractEntry index.js
+591 silly gunzTarPerm extractEntry test.js
+592 silly gunzTarPerm extractEntry .travis.yml
+593 silly gunzTarPerm extractEntry History.md
+594 silly gunzTarPerm extractEntry Makefile
+595 silly gunzTarPerm extractEntry out.dat
+596 silly gunzTarPerm extractEntry bin/express
+597 silly gunzTarPerm extractEntry Readme.md
+598 silly gunzTarPerm extractEntry lib/application.js
+599 silly gunzTarPerm extractEntry lib/express.js
+600 silly gunzTarPerm extractEntry lib/middleware.js
+601 silly gunzTarPerm extractEntry lib/request.js
+602 silly gunzTarPerm extractEntry lib/response.js
+603 silly gunzTarPerm extractEntry lib/utils.js
+604 silly gunzTarPerm extractEntry lib/view.js
+605 silly gunzTarPerm extractEntry lib/router/index.js
+606 silly gunzTarPerm extractEntry lib/router/route.js
+607 verbose read json /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233602747-0.922994271852076/package/package.json
+608 silly lockFile 7bf596ea-602747-0-922994271852076-package /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233602747-0.922994271852076/package
+609 verbose from cache /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233602747-0.922994271852076/package/package.json
+610 verbose tar pack [ '/Users/onemade/.npm/express/3.0.0/package.tgz',
+610 verbose tar pack   '/var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233602747-0.922994271852076/package' ]
+611 verbose tarball /Users/onemade/.npm/express/3.0.0/package.tgz
+612 verbose folder /var/folders/6_/ncbxyj255qq_0wd_pdw5hy_h0000gn/T/npm-26766/1351233602747-0.922994271852076/package
+613 silly lockFile 14358277-de-npm-express-3-0-0-package-tgz /Users/onemade/.npm/express/3.0.0/package.tgz
+614 verbose lock /Users/onemade/.npm/express/3.0.0/package.tgz /Users/onemade/.npm/14358277-de-npm-express-3-0-0-package-tgz.lock
+615 silly lockFile 14358277-de-npm-express-3-0-0-package-tgz /Users/onemade/.npm/express/3.0.0/package.tgz
+616 silly lockFile a56ec0f2-nemade-npm-express-3-0-0-package /Users/onemade/.npm/express/3.0.0/package
+617 verbose lock /Users/onemade/.npm/express/3.0.0/package /Users/onemade/.npm/a56ec0f2-nemade-npm-express-3-0-0-package.lock
+618 silly lockFile a56ec0f2-nemade-npm-express-3-0-0-package /Users/onemade/.npm/express/3.0.0/package
+619 verbose tar unpack /Users/onemade/.npm/express/3.0.0/package.tgz
+620 silly lockFile a56ec0f2-nemade-npm-express-3-0-0-package /Users/onemade/.npm/express/3.0.0/package
+621 verbose lock /Users/onemade/.npm/express/3.0.0/package /Users/onemade/.npm/a56ec0f2-nemade-npm-express-3-0-0-package.lock
+622 silly gunzTarPerm modes [ '755', '644' ]
+623 silly gunzTarPerm extractEntry package.json
+624 silly gunzTarPerm extractEntry .npmignore
+625 silly gunzTarPerm extractEntry LICENSE
+626 silly gunzTarPerm extractEntry client.js
+627 silly gunzTarPerm extractEntry index.js
+628 silly gunzTarPerm extractEntry test.js
+629 silly gunzTarPerm extractEntry .travis.yml
+630 silly gunzTarPerm extractEntry History.md
+631 silly gunzTarPerm extractEntry Makefile
+632 silly gunzTarPerm extractEntry out.dat
+633 silly gunzTarPerm extractEntry bin/express
+634 silly gunzTarPerm extractEntry Readme.md
+635 silly gunzTarPerm extractEntry lib/application.js
+636 silly gunzTarPerm extractEntry lib/express.js
+637 silly gunzTarPerm extractEntry lib/middleware.js
+638 silly gunzTarPerm extractEntry lib/request.js
+639 silly gunzTarPerm extractEntry lib/response.js
+640 silly gunzTarPerm extractEntry lib/utils.js
+641 silly gunzTarPerm extractEntry lib/view.js
+642 silly gunzTarPerm extractEntry lib/router/index.js
+643 silly gunzTarPerm extractEntry lib/router/route.js
+644 verbose from cache /Users/onemade/.npm/express/3.0.0/package/package.json
+645 silly lockFile a56ec0f2-nemade-npm-express-3-0-0-package /Users/onemade/.npm/express/3.0.0/package
+646 silly shasum updated bytes 35953
+647 info shasum 41e202f3627ea442be9e86d5ec51246ad72339ed
+647 info shasum /Users/onemade/.npm/express/3.0.0/package.tgz
+648 verbose from cache /Users/onemade/.npm/express/3.0.0/package/package.json
+649 verbose chmod /Users/onemade/.npm/express/3.0.0/package.tgz 644
+650 verbose chown /Users/onemade/.npm/express/3.0.0/package.tgz [ 501, 20 ]
+651 silly lockFile c3d3d32d-js-org-express-express-3-0-0-tgz https://registry.npmjs.org/express/-/express-3.0.0.tgz
+652 silly lockFile 35596296-express-3-0-0 express@3.0.0
+653 silly resolved [ { name: 'express',
+653 silly resolved     description: 'Sinatra inspired web development framework',
+653 silly resolved     version: '3.0.0',
+653 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+653 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+653 silly resolved     dependencies:
+653 silly resolved      { connect: '2.6.0',
+653 silly resolved        commander: '0.6.1',
+653 silly resolved        'range-parser': '0.0.4',
+653 silly resolved        mkdirp: '0.3.3',
+653 silly resolved        cookie: '0.0.4',
+653 silly resolved        crc: '0.2.0',
+653 silly resolved        fresh: '0.1.0',
+653 silly resolved        methods: '0.0.1',
+653 silly resolved        send: '0.1.0',
+653 silly resolved        debug: '*' },
+653 silly resolved     devDependencies:
+653 silly resolved      { ejs: '*',
+653 silly resolved        mocha: '*',
+653 silly resolved        jade: '*',
+653 silly resolved        hjs: '*',
+653 silly resolved        stylus: '*',
+653 silly resolved        should: '*',
+653 silly resolved        'connect-redis': '*',
+653 silly resolved        'github-flavored-markdown': '*',
+653 silly resolved        supertest: '0.0.1' },
+653 silly resolved     keywords:
+653 silly resolved      [ 'express',
+653 silly resolved        'framework',
+653 silly resolved        'sinatra',
+653 silly resolved        'web',
+653 silly resolved        'rest',
+653 silly resolved        'restful',
+653 silly resolved        'router',
+653 silly resolved        'app',
+653 silly resolved        'api' ],
+653 silly resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/express' },
+653 silly resolved     main: 'index',
+653 silly resolved     bin: { express: './bin/express' },
+653 silly resolved     scripts: { prepublish: 'npm prune', test: 'make test' },
+653 silly resolved     engines: { node: '*' },
+653 silly resolved     readme: '![express logo](http://f.cl.ly/items/0V2S1n0K1i3y1c122g04/Screen%20Shot%202012-04-11%20at%209.59.42%20AM.png)\n\n  Fast, unopinionated, minimalist web framework for [node](http://nodejs.org). [![Build Status](https://secure.travis-ci.org/visionmedia/express.png)](http://travis-ci.org/visionmedia/express)\n\n```js\nvar express = require(\'express\');\nvar app = express();\n\napp.get(\'/\', function(req, res){\n  res.send(\'Hello World\');\n});\n\napp.listen(3000);\n```\n\n## Installation\n\n    $ npm install -g express\n\n To install the 3.0 alpha:\n \n    $ npm install -g express@3.0\n\n## Quick Start\n\n The quickest way to get started with express is to utilize the executable `express(1)` to generate an application as shown below:\n\n Create the app:\n\n    $ npm install -g express\n    $ express /tmp/foo && cd /tmp/foo\n\n Install dependencies:\n\n    $ npm install\n\n Start the server:\n\n    $ node app\n\n## Features\n\n  * Built on [Connect](http://github.com/senchalabs/connect)\n  * Robust routing\n  * HTTP helpers (redirection, caching, etc)\n  * View system supporting 14+ template engines\n  * Content negotiation\n  * Focus on high performance\n  * Environment based configuration\n  * Executable for generating applications quickly\n  * High test coverage\n\n## Philosophy\n\n  The Express philosophy is to provide small, robust tooling for HTTP servers. Making\n  it a great solution for single page applications, web sites, hybrids, or public\n  HTTP APIs.\n  \n  Built on Connect you can use _only_ what you need, and nothing more, applications\n  can be as big or as small as you like, even a single file. Express does\n  not force you to use any specific ORM or template engine. With support for over\n  14 template engines via [Consolidate.js](http://github.com/visionmedia/consolidate.js)\n  you can quickly craft your perfect framework.\n\n## More Information\n\n  * Join #express on freenode\n  * [Google Group](http://groups.google.com/group/express-js) for discussion\n  * Follow [tjholowaychuk](http://twitter.com/tjholowaychuk) on twitter for updates\n  * Visit the [Wiki](http://github.com/visionmedia/express/wiki)\n  * [日本語ドキュメンテーション](http://hideyukisaito.com/doc/expressjs/) by [hideyukisaito](https://github.com/hideyukisaito)\n  * [Русскоязычная документация](http://express-js.ru/)\n\n## Viewing Examples\n\nClone the Express repo, then install the dev dependencies to install all the example / test suite deps:\n\n    $ git clone git://github.com/visionmedia/express.git --depth 1\n    $ cd express\n    $ npm install\n\nthen run whichever tests you want:\n\n    $ node examples/content-negotiation\n\n## Running Tests\n\nTo run the test suite first invoke the following command within the repo, installing the development dependencies:\n\n    $ npm install\n\nthen run the tests:\n\n    $ make test\n\n## Contributors\n\n```\nproject: express\ncommits: 3559\nactive : 468 days\nfiles  : 237\nauthors: \n 1891\tTj Holowaychuk          53.1%\n 1285\tvisionmedia             36.1%\n  182\tTJ Holowaychuk          5.1%\n   54\tAaron Heckmann          1.5%\n   34\tcsausdev                1.0%\n   26\tciaranj                 0.7%\n   21\tRobert Sköld          0.6%\n    6\tGuillermo Rauch         0.2%\n    3\tDav Glass               0.1%\n    3\tNick Poulden            0.1%\n    2\tRandy Merrill           0.1%\n    2\tBenny Wong              0.1%\n    2\tHunter Loftis           0.1%\n    2\tJake Gordon             0.1%\n    2\tBrian McKinney          0.1%\n    2\tRoman Shtylman          0.1%\n    2\tBen Weaver              0.1%\n    2\tDave Hoover             0.1%\n    2\tEivind Fjeldstad        0.1%\n    2\tDaniel Shaw             0.1%\n    1\tMatt Colyer             0.0%\n    1\tPau Ramon               0.0%\n    1\tPero Pejovic            0.0%\n    1\tPeter Rekdal Sunde      0.0%\n    1\tRaynos                  0.0%\n    1\tTeng Siong Ong          0.0%\n    1\tViktor Kelemen          0.0%\n    1\tctide                   0.0%\n    1\t8bitDesigner            0.0%\n    1\tisaacs                  0.0%\n    1\tmgutz                   0.0%\n    1\tpikeas                  0.0%\n    1\tshuwatto                0.0%\n    1\ttstrimple               0.0%\n    1\tewoudj                  0.0%\n    1\tAdam Sanderson          0.0%\n    1\tAndrii Kostenko         0.0%\n    1\tAndy Hiew               0.0%\n    1\tArpad Borsos            0.0%\n    1\tAshwin Purohit          0.0%\n    1\tBenjen                  0.0%\n    1\tDarren Torpey           0.0%\n    1\tGreg Ritter             0.0%\n    1\tGregory Ritter          0.0%\n    1\tJames Herdman           0.0%\n    1\tJim Snodgrass           0.0%\n    1\tJoe McCann              0.0%\n    1\tJonathan Dumaine        0.0%\n    1\tJonathan Palardy        0.0%\n    1\tJonathan Zacsh          0.0%\n    1\tJustin Lilly            0.0%\n    1\tKen Sato                0.0%\n    1\tMaciej Małecki         0.0%\n    1\tMasahiro Hayashi        0.0%\n```\n\n## License \n\n(The MIT License)\n\nCopyright (c) 2009-2012 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+653 silly resolved     _id: 'express@3.0.0',
+653 silly resolved     dist: { shasum: '41e202f3627ea442be9e86d5ec51246ad72339ed' },
+653 silly resolved     _from: 'express@3.0.0' } ]
+654 info install express@3.0.0 into /usr/local/lib
+655 info installOne express@3.0.0
+656 verbose from cache /Users/onemade/.npm/express/3.0.0/package/package.json
+657 info /usr/local/lib/node_modules/express unbuild
+658 verbose from cache /usr/local/lib/node_modules/express/package.json
+659 info preuninstall express@3.0.0rc3
+660 info uninstall express@3.0.0rc3
+661 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild express@3.0.0rc3
+662 verbose /usr/local/bin,[object Object] binRoot
+663 info /usr/local/lib/node_modules/express unbuild
+664 verbose read json /usr/local/lib/node_modules/express/package.json
+665 info preuninstall express@3.0.0rc3
+666 info uninstall express@3.0.0rc3
+667 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild express@3.0.0rc3
+668 verbose /usr/local/bin,[object Object] binRoot
+669 error error rolling back Error: EPERM, chmod '/usr/local/bin/express'
+669 error error rolling back  express@3.0.0 { [Error: EPERM, chmod '/usr/local/bin/express'] errno: 50, code: 'EPERM', path: '/usr/local/bin/express' }
+670 error Error: EPERM, chmod '/usr/local/bin/express'
+670 error  { [Error: EPERM, chmod '/usr/local/bin/express'] errno: 50, code: 'EPERM', path: '/usr/local/bin/express' }
+671 error Please try running this command again as root/Administrator.
+672 error System Darwin 12.2.0
+673 error command "node" "/usr/local/bin/npm" "update" "-dg" "express"
+674 error cwd /Users/onemade/Documents/onemade/webapp
+675 error node -v v0.8.6
+676 error npm -v 1.1.48
+677 error path /usr/local/bin/express
+678 error code EPERM
+679 error errno 50
+680 error stack Error: EPERM, chmod '/usr/local/bin/express'
+681 verbose exit [ 50, true ]

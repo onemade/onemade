@@ -7,7 +7,7 @@ var data = {};
 function start(res, url){
   //res.send("/* package.readability */");
   // uncoment the following line to print the debug info to console.
-  // readability.debug(true);
+  //readability.debug(true);
   //var url = 'http://www.cnpc.com.cn/News/zzxw/xwzx/xwygg/201208/20120809_C5188.shtml';
   //url ='http://news.cnpc.com.cn/system/2012/08/09/001387065.shtml';
   //url ='http://www.cnbeta.com/articles/202195.htm';
